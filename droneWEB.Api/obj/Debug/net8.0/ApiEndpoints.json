@@ -1,0 +1,129 @@
+[
+  {
+    "ContainingType": "droneWEB.Api.Controllers.KullaniciController",
+    "Method": "KullaniciAra",
+    "RelativePath": "api/Kullanici/ara",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "eposta",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "tcKimlikNo",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.KullaniciController",
+    "Method": "GirisYap",
+    "RelativePath": "api/Kullanici/giris-yap",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "istek",
+        "Type": "droneWEB.Core.Dto.Requests.GirisIstek",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.KullaniciController",
+    "Method": "KayitOl",
+    "RelativePath": "api/Kullanici/kayit-ol",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "istek",
+        "Type": "droneWEB.Core.Dto.Requests.KayitIstek",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.KullaniciController",
+    "Method": "YetkiAta",
+    "RelativePath": "api/Kullanici/yetki-ata",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "istek",
+        "Type": "droneWEB.Core.Dto.Requests.YetkiIstek",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.KullaniciController",
+    "Method": "YetkiAtaToplu",
+    "RelativePath": "api/Kullanici/yetki-ata-toplu",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "rolIdListesi",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.SmsController",
+    "Method": "Gonder",
+    "RelativePath": "api/Sms/gonder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "istek",
+        "Type": "droneWEB.Core.Dto.Requests.SmsGonderIstek",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[droneWEB.Api.WeatherForecast, droneWEB.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

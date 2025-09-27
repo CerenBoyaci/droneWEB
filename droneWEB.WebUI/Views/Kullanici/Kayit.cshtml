@@ -1,0 +1,58 @@
+﻿@model droneWEB.WebUI.Models.KayitViewModel
+
+<link rel="stylesheet" href="~/css/Layout.css" />
+
+<div class="form-container">
+    @if (ViewBag.Mesaj != null)
+    {
+        <div class="message @(ViewBag.Basarili == true ? "success" : "error")">
+            @ViewBag.Mesaj
+        </div>
+    }
+
+    <h2>Kayıt Ol</h2>
+
+    <form asp-action="Kayit" method="post">
+
+        <input asp-for="Ad" placeholder="Ad" />
+        <span asp-validation-for="Ad" class="text-danger"></span>
+
+        <input asp-for="Soyad" placeholder="Soyad" />
+        <span asp-validation-for="Soyad" class="text-danger"></span>
+
+        <input asp-for="Eposta" placeholder="Eposta" type="email" />
+        <span asp-validation-for="Eposta" class="text-danger"></span>
+
+        <input asp-for="TcKimlikNo" id="TcKimlikNo" placeholder="TC Kimlik No" maxlength="11" />
+        <span asp-validation-for="TcKimlikNo" class="text-danger"></span>
+
+        <div style="position:relative;">
+            <span style="position:absolute; left:10px; top:50%; transform:translateY(-50%); color:#000;">+90</span>
+            <input asp-for="Telefon" id="Telefon" maxlength="10" placeholder="___ ___ __ __" style="padding-left:40px;" />
+        </div>
+        <span asp-validation-for="Telefon" class="text-danger"></span>
+
+        <input asp-for="Sifre" id="Sifre" placeholder="Şifre" type="password" />
+        <span asp-validation-for="Sifre" class="text-danger"></span>
+
+        <button type="submit">Kayıt Ol</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Telefon maskesi
+            Inputmask("999 999 99 99").mask("#Telefon");
+
+            // TC Kimlik ve Telefon sadece rakam
+            $("#TcKimlikNo, #Telefon").on("input", function () {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+        });
+    </script>
+
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

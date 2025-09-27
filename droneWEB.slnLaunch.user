@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "droneWEB.Api\\droneWEB.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "droneWEB.WebUI\\droneWEB.WebUI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

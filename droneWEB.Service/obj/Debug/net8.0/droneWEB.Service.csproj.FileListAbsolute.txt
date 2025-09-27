@@ -1,0 +1,51 @@
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.deps.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Core.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Data.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Core.pdb
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.csproj.AssemblyReference.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.AssemblyInfoInputs.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.AssemblyInfo.cs
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.csproj.CoreCompileInputs.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.5B73ADC4.Up2Date
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\refint\droneWEB.Service.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Service\obj\Debug\net8.0\ref\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.deps.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Core.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Data.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Core.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.AssemblyInfo.cs
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.5B73ADC4.Up2Date
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\refint\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Service\obj\Debug\net8.0\ref\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.deps.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Core.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Data.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Core.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.AssemblyInfo.cs
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.5B73ADC4.Up2Date
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\refint\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\ref\droneWEB.Service.dll

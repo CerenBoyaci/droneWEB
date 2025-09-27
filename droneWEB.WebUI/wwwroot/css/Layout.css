@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form kapsayýcý */
+.form-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    text-align: center;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #ff4d4f, #0b1e4a) 1;
+}
+
+/* Inputlar */
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #ff4d4f, #0b1e4a) 1;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box;
+}
+
+    form input:focus {
+        box-shadow: 0 0 6px rgba(255,77,79,0.7);
+    }
+
+/* Buton */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(45deg, #ff4d4f, #0b1e4a);
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+    button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+
+/* Mesaj kutularý */
+.message {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+    .message.success {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+    .message.error {
+        background-color: #dc3545;
+        color: #fff;
+    }

@@ -1,0 +1,190 @@
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\appsettings.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.staticwebassets.endpoints.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.exe
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.deps.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.runtimeconfig.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.pdb
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.csproj.AssemblyReference.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.AssemblyInfoInputs.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.AssemblyInfo.cs
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.csproj.CoreCompileInputs.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\scopedcss\bundle\droneWEB.Api.styles.css
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.8A26E323.Up2Date
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\refint\droneWEB.Api.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.pdb
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.genruntimeconfig.cache
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\obj\Debug\net8.0\ref\droneWEB.Api.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Dapper.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Dapper.SqlBuilder.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Core.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Data.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Service.dll
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Core.pdb
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\Pau\source\repos\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\appsettings.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.staticwebassets.endpoints.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.exe
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.deps.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.runtimeconfig.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Dapper.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Dapper.SqlBuilder.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Core.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Data.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Core.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.AssemblyInfo.cs
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\scopedcss\bundle\droneWEB.Api.styles.css
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.droneWEB.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.droneWEB.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.droneWEB.Api.props
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.droneWEB.Api.props
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.droneWEB.Api.props
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.8A26E323.Up2Date
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\refint\droneWEB.Api.dll
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.pdb
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.genruntimeconfig.cache
+C:\Users\ASUS\Documents\tez web\droneWEB\droneWEB.Api\obj\Debug\net8.0\ref\droneWEB.Api.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\appsettings.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.staticwebassets.endpoints.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.exe
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.deps.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.runtimeconfig.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Api.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Dapper.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Dapper.SqlBuilder.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Core.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Data.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Core.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.csproj.AssemblyReference.cache
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.AssemblyInfo.cs
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\scopedcss\bundle\droneWEB.Api.styles.css
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.droneWEB.Api.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.droneWEB.Api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.build.droneWEB.Api.props
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.droneWEB.Api.props
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.droneWEB.Api.props
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.8A26E323.Up2Date
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\refint\droneWEB.Api.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.pdb
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\droneWEB.Api.genruntimeconfig.cache
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\obj\Debug\net8.0\ref\droneWEB.Api.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Twilio.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Infobip.Api.Client.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Infobip.Api.SDK.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\JsonSubTypes.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Polly.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

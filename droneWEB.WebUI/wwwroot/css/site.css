@@ -1,0 +1,169 @@
+/* Genel sayfa stili */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5; /* Kýrýk beyaz arka plan */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+}
+/* Form kapsayýcý (daha büyük boyut, kýrmýzý-lacivert kenar ve daha koyu iç) */
+
+form {
+    background-color: #e0e0e0; /* Arka plandan daha koyu iç */
+    padding: 40px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    width: 100%;
+    max-width: 500px; /* Text alanlarýndan daha büyük */
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #ff4d4f, #0b1e4a) 1;
+}
+/* Üstteki Login/Sign Up butonlarý (form içinde) */
+
+.login-signup-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+    .login-signup-container button {
+        flex: 1;
+        padding: 10px;
+        margin: 0 5px;
+        background: #fff;
+        border: none;
+        border-radius: 10px;
+        color: #000;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .login-signup-container button.active {
+            background: linear-gradient(45deg, #ff4d4f, #0b1e4a);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        .login-signup-container button:hover {
+            background: linear-gradient(45deg, #0b1e4a, #ff4d4f);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+        }
+/* Inputlar için yeni düzen (daha da küçültüldü) */
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+    .input-group input {
+        width: 48%;
+        padding: 6px 8px; /* Daha küçük padding */
+        margin: 5px 0;
+        border-radius: 6px; /* Daha küçük border-radius */
+        border: 2px solid #fff;
+        background-color: rgba(255,255,255,0.1);
+        color: #fff;
+        font-size: 0.8rem; /* Daha küçük font-size */
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+        .input-group input:focus {
+            border-color: #ff4d4f;
+            background-color: rgba(255,255,255,0.2);
+            box-shadow: 0 0 6px #ff4d4f; /* Daha küçük box-shadow */
+        }
+/* Tekli inputlar (Email, Password) */
+
+.single-input {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+    .single-input input {
+        width: 100%;
+        padding: 6px 8px; /* Daha küçük padding */
+        margin: 5px 0;
+        border-radius: 6px; /* Daha küçük border-radius */
+        border: 2px solid #fff;
+        background-color: rgba(255,255,255,0.1);
+        color: #fff;
+        font-size: 0.8rem; /* Daha küçük font-size */
+        outline: none;
+        transition: all 0.3s ease;
+    }
+
+        .single-input input:focus {
+            border-color: #ff4d4f;
+            background-color: rgba(255,255,255,0.2);
+            box-shadow: 0 0 6px #ff4d4f; /* Daha küçük box-shadow */
+        }
+/* Checkbox */
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+/* Butonlar (orijinal efektler korunuyor) */
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff4d4f, #0b1e4a);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+    button:hover {
+        background: linear-gradient(45deg, #0b1e4a, #ff4d4f);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    }
+/* Mesaj kutusu */
+
+p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+/* Responsive */
+
+@media (max-width: 500px) {
+    form {
+        padding: 30px 20px;
+        max-width: 100%; /* Küçük ekranlarda tam geniþlik */
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+        .input-group input {
+            width: 100%;
+        }
+}
