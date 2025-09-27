@@ -58,5 +58,14 @@ namespace droneWEB.Data.Repository
             }
         }
 
+        public async Task<List<RolItem>> GetAllAsync()
+        {
+            using var baglanti = new SqlConnection(_connectionString);
+            var sql = "SELECT Id, Ad FROM lu_rol";
+            var roller = await baglanti.QueryAsync<RolItem>(sql);
+            return roller.ToList();
+        }
+
+
     }
 }

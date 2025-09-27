@@ -117,6 +117,12 @@ namespace droneWEB.Service
             await _repo.YetkiAtaAsync(kullaniciId, rolIdListesi);
         }
 
+        public async Task<List<RolItem>> TumRolleriGetir()
+        {
+            return await _repo.GetAllAsync();
+        }
+
+
 
     }
 }

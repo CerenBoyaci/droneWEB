@@ -95,5 +95,13 @@ namespace droneWEB.Api.Controllers
                 return BadRequest(new { Mesaj = ex.Message });
             }
         }
+
+        [HttpGet("liste")]
+        public async Task<IActionResult> Liste()
+        {
+            var roller = await _servis.TumRolleriGetir();
+            return Ok(roller);
+        }
+
     }
 }

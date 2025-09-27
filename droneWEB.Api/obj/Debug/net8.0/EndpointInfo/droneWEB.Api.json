@@ -179,6 +179,18 @@
         }
       }
     },
+    "/api/Kullanici/liste": {
+      "get": {
+        "tags": [
+          "Kullanici"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Sms/gonder": {
       "post": {
         "tags": [

@@ -98,6 +98,41 @@ namespace droneWEB.WebUI.Controllers
             return View(model);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> YetkiAta(int kullaniciId)
+        {
+            var model = new YetkiViewModel { KullaniciId = kullaniciId };
+
+            // Roller API'den çekiliyor
+            var rollerResponse = await _httpClient.GetFromJsonAsync<List<RolItem>>("api/rol/liste");
+            if (rollerResponse != null)
+                model.RolSecenekleri = rollerResponse;
+
+            return View(model);
+        }
+
+        // Form submit
+        [HttpPost]
+        public async Task<IActionResult> YetkiAta(YetkiViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var response = await _httpClient.PostAsJsonAsync(
+                $"api/kullanici/yetki-ata-toplu?kullaniciId={model.KullaniciId}",
+                model.RolIdListesi
+            );
+
+            if (response.IsSuccessStatusCode)
+            {
+                TempData["Basarili"] = "Yetkiler başarıyla atandı.";
+                return RedirectToAction("Index"); // veya kullanıcı listesi
+            }
+
+            TempData["Hata"] = "Yetki atama başarısız oldu.";
+            return View(model);
+        }
+
 
 
     }

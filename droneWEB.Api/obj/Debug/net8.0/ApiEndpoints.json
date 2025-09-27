@@ -54,6 +54,16 @@
   },
   {
     "ContainingType": "droneWEB.Api.Controllers.KullaniciController",
+    "Method": "Liste",
+    "RelativePath": "api/Kullanici/liste",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.KullaniciController",
     "Method": "YetkiAta",
     "RelativePath": "api/Kullanici/yetki-ata",
     "HttpMethod": "POST",

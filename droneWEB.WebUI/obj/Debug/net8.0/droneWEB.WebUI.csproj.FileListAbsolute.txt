@@ -59,3 +59,4 @@ C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.WebUI\bin\Debug\net8.0\Newton
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.WebUI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.WebUI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.WebUI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.WebUI\obj\Debug\net8.0\droneWEB.WebUI.sourcelink.json

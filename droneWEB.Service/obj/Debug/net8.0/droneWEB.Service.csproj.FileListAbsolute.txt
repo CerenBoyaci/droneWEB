@@ -49,3 +49,4 @@ C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\dron
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\refint\droneWEB.Service.dll
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.pdb
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\ref\droneWEB.Service.dll
+C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.sourcelink.json
