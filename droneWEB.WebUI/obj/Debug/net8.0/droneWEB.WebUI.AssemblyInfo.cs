@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("droneWEB.WebUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48897ca210bd58eb8f33043a51b2f9cbc2842bbe")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0a644171bc128bd8c75777bc654ff44b79e40a9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("droneWEB.WebUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("droneWEB.WebUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

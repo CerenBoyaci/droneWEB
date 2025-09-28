@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Harita";
+}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<h2>Harita</h2>
+
+<!-- Harita alanı -->
+<div id="map" style="width:100%; height:500px;"></div>
+
+<!-- Yeni marker ekleme formu -->
+<div style="margin-top:20px;">
+    <input type="text" id="baslik" placeholder="Başlık" />
+    <input type="number" id="enlem" placeholder="Enlem" step="0.000001" />
+    <input type="number" id="boylam" placeholder="Boylam" step="0.000001" />
+    <button onclick="ekleMarker()">Marker Ekle</button>
+</div>
+
+<script>
+    // 1. Haritayı oluştur
+    var map = L.map('map').setView([39.9208, 32.8541], 13); // Ankara koordinatları
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // 2. Marker layer group
+    var markersLayer = L.layerGroup().addTo(map);
+
+    // 3. API'den markerları çek ve haritaya ekle
+    async function loadMarkers() {
+        markersLayer.clearLayers();
+        try {
+            const response = await fetch('/Haritalama/tum-isaretciler');
+            const data = await response.json();
+
+            data.forEach(marker => {
+                L.marker([marker.enlem, marker.boylam])
+                 .bindPopup(marker.baslik)
+                 .addTo(markersLayer);
+            });
+        } catch (error) {
+            console.error("Markerları yüklerken hata oluştu:", error);
+        }
+    }
+
+    loadMarkers();
+
+    // 4. Yeni marker ekleme
+    async function ekleMarker() {
+        const baslik = document.getElementById('baslik').value;
+        const enlem = parseFloat(document.getElementById('enlem').value);
+        const boylam = parseFloat(document.getElementById('boylam').value);
+
+        if (!baslik || isNaN(enlem) || isNaN(boylam)) {
+            alert("Lütfen tüm alanları doldurun ve geçerli koordinat girin.");
+            return;
+        }
+
+        try {
+            const response = await fetch('/Haritalama/olustur', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ baslik, enlem, boylam })
+            });
+
+            if (response.ok) {
+                alert("Marker eklendi!");
+                document.getElementById('baslik').value = '';
+                document.getElementById('enlem').value = '';
+                document.getElementById('boylam').value = '';
+                loadMarkers(); 
+            } else {
+                alert("Marker eklenirken bir hata oluştu.");
+            }
+        } catch (error) {
+            console.error("Marker ekleme hatası:", error);
+        }
+    }
+</script>
+
