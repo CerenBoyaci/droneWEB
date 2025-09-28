@@ -66,6 +66,14 @@ namespace droneWEB.Data.Repository
             return roller.ToList();
         }
 
+        public async Task<List<Kullanici>> KullaniciAllAsync()
+        {
+            using var baglanti = new SqlConnection(_connectionString);
+            var sql = "SELECT Id, Ad, Soyad FROM dt_kullanici";
+            var kullanicilar = await baglanti.QueryAsync<Kullanici>(sql);
+            return kullanicilar.ToList();
+        }
+
 
     }
 }

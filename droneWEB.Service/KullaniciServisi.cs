@@ -122,6 +122,16 @@ namespace droneWEB.Service
             return await _repo.GetAllAsync();
         }
 
+        public async Task<List<KullaniciItem>> TumKullanicilariGetir()
+        {
+            var kullanicilar = await _repo.KullaniciAllAsync();
+            return kullanicilar.Select(k => new KullaniciItem
+            {
+                Id = k.Id,
+                Ad = k.Ad + " " + k.Soyad
+            }).ToList();
+        }
+
 
 
     }

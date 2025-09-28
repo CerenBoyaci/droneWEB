@@ -1,5 +1,6 @@
 ﻿using droneWEB.WebUI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Net.Http.Json;
 
 namespace droneWEB.WebUI.Controllers
@@ -99,17 +100,30 @@ namespace droneWEB.WebUI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> YetkiAta(int kullaniciId)
+        public async Task<IActionResult> YetkiAta()
         {
-            var model = new YetkiViewModel { KullaniciId = kullaniciId };
+            var model = new YetkiViewModel();
 
-            // Roller API'den çekiliyor
-            var rollerResponse = await _httpClient.GetFromJsonAsync<List<RolItem>>("api/rol/liste");
-            if (rollerResponse != null)
-                model.RolSecenekleri = rollerResponse;
+            // Roller
+            var roller = await _httpClient.GetFromJsonAsync<List<RolItem>>("https://localhost:7130/api/Kullanici/liste");
+            if (roller != null)
+                model.RolSecenekleri = roller
+                    .Select(r => new SelectListItem { Value = r.Id.ToString(), Text = r.Ad })
+                    .ToList();
+
+            // Kullanıcılar
+            var kullanicilar = await _httpClient.GetFromJsonAsync<List<KullaniciItem>>("https://localhost:7130/api/Kullanici/kullanicilar");
+            if (kullanicilar != null)
+                model.KullaniciSecenekleri = kullanicilar
+                    .Select(k => new SelectListItem { Value = k.Id.ToString(), Text = k.Ad + " " + k.Soyad })
+                    .ToList();
 
             return View(model);
         }
+
+
+
+
 
         // Form submit
         [HttpPost]
@@ -119,19 +133,35 @@ namespace droneWEB.WebUI.Controllers
                 return View(model);
 
             var response = await _httpClient.PostAsJsonAsync(
-                $"api/kullanici/yetki-ata-toplu?kullaniciId={model.KullaniciId}",
+                $"https://localhost:7130/api/Kullanici/yetki-ata-toplu?kullaniciId={model.KullaniciId}",
                 model.RolIdListesi
             );
 
             if (response.IsSuccessStatusCode)
             {
                 TempData["Basarili"] = "Yetkiler başarıyla atandı.";
-                return RedirectToAction("Index"); // veya kullanıcı listesi
+
+                // API'den tekrar seçenekleri çekelim ki sayfa yenilendiğinde dropdown dolu olsun
+                var roller = await _httpClient.GetFromJsonAsync<List<RolItem>>("https://localhost:7130/api/Kullanici/liste");
+                if (roller != null)
+                    model.RolSecenekleri = roller
+                        .Select(r => new SelectListItem { Value = r.Id.ToString(), Text = r.Ad })
+                        .ToList();
+
+                var kullanicilar = await _httpClient.GetFromJsonAsync<List<KullaniciItem>>("https://localhost:7130/api/Kullanici/kullanicilar");
+                if (kullanicilar != null)
+                    model.KullaniciSecenekleri = kullanicilar
+                        .Select(k => new SelectListItem { Value = k.Id.ToString(), Text = k.Ad + " " + k.Soyad })
+                        .ToList();
+
+                return View(model);
             }
 
             TempData["Hata"] = "Yetki atama başarısız oldu.";
             return View(model);
         }
+
+
 
 
 

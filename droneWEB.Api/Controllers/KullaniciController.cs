@@ -103,5 +103,13 @@ namespace droneWEB.Api.Controllers
             return Ok(roller);
         }
 
+        [HttpGet("kullanicilar")]
+        public async Task<IActionResult> Kullanicilar()
+        {
+            var kullanicilar = await _servis.TumKullanicilariGetir(); 
+            return Ok(kullanicilar);
+        }
+
+
     }
 }

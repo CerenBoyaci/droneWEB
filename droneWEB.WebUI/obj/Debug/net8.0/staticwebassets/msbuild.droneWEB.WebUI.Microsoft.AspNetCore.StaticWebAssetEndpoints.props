@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/Layout.alv0jo4ry1.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Layout.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"alv0jo4ry1"},{"Name":"integrity","Value":"sha256-Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA="},{"Name":"label","Value":"_content/droneWEB.WebUI/css/Layout.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1690"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 15:35:06 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/Layout.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Layout.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1690"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 15:35:06 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1840"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 28 Sep 2025 12:11:29 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/Layout.kw0jsqbrsn.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Layout.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kw0jsqbrsn"},{"Name":"integrity","Value":"sha256-VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk="},{"Name":"label","Value":"_content/droneWEB.WebUI/css/Layout.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1840"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk=\u0022"},{"Name":"Last-Modified","Value":"Sun, 28 Sep 2025 12:11:29 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

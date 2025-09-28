@@ -3,29 +3,20 @@
 <h2>Kullanıcıya Yetki Ata</h2>
 
 <form asp-action="YetkiAta" method="post">
-    <input type="hidden" asp-for="KullaniciId" />
+    <div>
+        <label>Kullanıcı Seç:</label>
+        <select asp-for="KullaniciId" asp-items="Model.KullaniciSecenekleri">
+            <option value="">Seçiniz</option>
+        </select>
+    </div>
 
     <div>
-        <label>Roller:</label>
-        @foreach (var rol in Model.RolSecenekleri)
-        {
-            <div>
-                <input type="checkbox" name="RolIdListesi" value="@rol.Id"
-                @(Model.RolIdListesi.Contains(rol.Id) ? "checked" : "") />
-                <label>@rol.Ad</label>
-            </div>
-        }
+        <label>Rol Seç (Ctrl ile çoklu seçilebilir):</label>
+        <select asp-for="RolIdListesi" asp-items="Model.RolSecenekleri" multiple="multiple">
+        </select>
     </div>
 
     <button type="submit">Yetki Ata</button>
 </form>
 
-@if (TempData["Basarili"] != null)
-{
-    <div style="color:green">@TempData["Basarili"]</div>
-}
 
-@if (TempData["Hata"] != null)
-{
-    <div style="color:red">@TempData["Hata"]</div>
-}

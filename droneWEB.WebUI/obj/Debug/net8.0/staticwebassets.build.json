@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2OKTT6tgbSwY5wd1haibDTZJaoqHDBjWT4psqD2ImZI=",
+  "Hash": "N/kWMFHPwGP9J53q45En690ing4f8dVpGmp2zEVsT7M=",
   "Source": "droneWEB.WebUI",
   "BasePath": "_content/droneWEB.WebUI",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "alv0jo4ry1",
-      "Integrity": "Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA=",
+      "Fingerprint": "kw0jsqbrsn",
+      "Integrity": "VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Layout.css"
@@ -1342,51 +1342,6 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/Layout.alv0jo4ry1.css",
-      "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\Layout.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1690"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 15:35:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "alv0jo4ry1"
-        },
-        {
-          "Name": "label",
-          "Value": "css/Layout.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA="
-        }
-      ]
-    },
-    {
       "Route": "css/Layout.css",
       "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\Layout.css",
       "Selectors": [],
@@ -1397,7 +1352,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1690"
+          "Value": "1840"
         },
         {
           "Name": "Content-Type",
@@ -1405,11 +1360,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA=\""
+          "Value": "\"VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 15:35:06 GMT"
+          "Value": "Sun, 28 Sep 2025 12:11:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1419,7 +1374,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Eg22DsZgspTLAMfaU6LhDRY7ILrJ16XHWGoZiPdrikA="
+          "Value": "sha256-VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk="
+        }
+      ]
+    },
+    {
+      "Route": "css/Layout.kw0jsqbrsn.css",
+      "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\Layout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1840"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 28 Sep 2025 12:11:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kw0jsqbrsn"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Layout.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VD8ubX/8aZAgHwUGFWmSpz3dvd2b/fbEMFrdPwdY8Wk="
         }
       ]
     },
