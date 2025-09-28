@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{03CF8375-2F3F-4DB6-A582-09969AC77787}|droneWEB.Api\\droneWEB.Api.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CF8375-2F3F-4DB6-A582-09969AC77787}|droneWEB.Api\\droneWEB.Api.csproj|solutionrelative:droneweb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{03CF8375-2F3F-4DB6-A582-09969AC77787}|droneWEB.Api\\droneWEB.Api.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.api\\controllers\\haritalamacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03CF8375-2F3F-4DB6-A582-09969AC77787}|droneWEB.Api\\droneWEB.Api.csproj|solutionrelative:droneweb.api\\controllers\\haritalamacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A120DF1E-4C15-4463-AEDA-6586ED06AA3F}|droneWEB.Service\\droneWEB.Service.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.service\\haritalamaservisi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A120DF1E-4C15-4463-AEDA-6586ED06AA3F}|droneWEB.Service\\droneWEB.Service.csproj|solutionrelative:droneweb.service\\haritalamaservisi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF589BBD-7BAC-4FD1-A8F5-548A94A6DD9F}|droneWEB.Data\\droneWEB.Data.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.data\\repository\\haritalamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF589BBD-7BAC-4FD1-A8F5-548A94A6DD9F}|droneWEB.Data\\droneWEB.Data.csproj|solutionrelative:droneweb.data\\repository\\haritalamarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.core\\dto\\responses\\isaretciresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|solutionrelative:droneweb.core\\dto\\responses\\isaretciresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF589BBD-7BAC-4FD1-A8F5-548A94A6DD9F}|droneWEB.Data\\droneWEB.Data.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.data\\repository\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF589BBD-7BAC-4FD1-A8F5-548A94A6DD9F}|droneWEB.Data\\droneWEB.Data.csproj|solutionrelative:droneweb.data\\repository\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.core\\dtos\\isaretcidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|solutionrelative:droneweb.core\\dtos\\isaretcidto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.core\\dto\\requests\\isaretciguncellerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|solutionrelative:droneweb.core\\dto\\requests\\isaretciguncellerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.core\\dto\\requests\\isaretciolusturrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|solutionrelative:droneweb.core\\dto\\requests\\isaretciolusturrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FD0891F5-5D66-474C-9848-616F0E1E45DA}|droneWEB.WebUI\\droneWEB.WebUI.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.webui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FD0891F5-5D66-474C-9848-616F0E1E45DA}|droneWEB.WebUI\\droneWEB.WebUI.csproj|solutionrelative:droneweb.webui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -36,10 +72,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A120DF1E-4C15-4463-AEDA-6586ED06AA3F}|droneWEB.Service\\droneWEB.Service.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.service\\kullaniciservisi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A120DF1E-4C15-4463-AEDA-6586ED06AA3F}|droneWEB.Service\\droneWEB.Service.csproj|solutionrelative:droneweb.service\\kullaniciservisi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FF589BBD-7BAC-4FD1-A8F5-548A94A6DD9F}|droneWEB.Data\\droneWEB.Data.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.data\\repository\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FF589BBD-7BAC-4FD1-A8F5-548A94A6DD9F}|droneWEB.Data\\droneWEB.Data.csproj|solutionrelative:droneweb.data\\repository\\kullanicirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FD0891F5-5D66-474C-9848-616F0E1E45DA}|droneWEB.WebUI\\droneWEB.WebUI.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.webui\\models\\rolitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -98,10 +130,6 @@
       "RelativeMoniker": "D:0:0:{4D57B566-A7F1-4346-AC43-40BBDFFE3B10}|droneWEB.Core\\droneWEB.Core.csproj|solutionrelative:droneweb.core\\dto\\requests\\smsgonderistek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{03CF8375-2F3F-4DB6-A582-09969AC77787}|droneWEB.Api\\droneWEB.Api.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{03CF8375-2F3F-4DB6-A582-09969AC77787}|droneWEB.Api\\droneWEB.Api.csproj|solutionrelative:droneweb.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FD0891F5-5D66-474C-9848-616F0E1E45DA}|droneWEB.WebUI\\droneWEB.WebUI.csproj|c:\\users\\asus\\documents\\tez webb\\droneweb\\droneweb.webui\\models\\girisresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FD0891F5-5D66-474C-9848-616F0E1E45DA}|droneWEB.WebUI\\droneWEB.WebUI.csproj|solutionrelative:droneweb.webui\\models\\girisresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -129,11 +157,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 656,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HaritalamaController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Api\\Controllers\\HaritalamaController.cs",
+              "RelativeDocumentMoniker": "droneWEB.Api\\Controllers\\HaritalamaController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Api\\Controllers\\HaritalamaController.cs*",
+              "RelativeToolTip": "droneWEB.Api\\Controllers\\HaritalamaController.cs*",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAiwCQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T14:13:02.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HaritalamaServisi.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Service\\HaritalamaServisi.cs",
+              "RelativeDocumentMoniker": "droneWEB.Service\\HaritalamaServisi.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Service\\HaritalamaServisi.cs*",
+              "RelativeToolTip": "droneWEB.Service\\HaritalamaServisi.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAiwCEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T14:12:26.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HaritalamaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Data\\Repository\\HaritalamaRepository.cs",
+              "RelativeDocumentMoniker": "droneWEB.Data\\Repository\\HaritalamaRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Data\\Repository\\HaritalamaRepository.cs*",
+              "RelativeToolTip": "droneWEB.Data\\Repository\\HaritalamaRepository.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T14:08:14.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Api\\Program.cs",
+              "RelativeDocumentMoniker": "droneWEB.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Api\\Program.cs*",
+              "RelativeToolTip": "droneWEB.Api\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T19:19:42.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IsaretciDto.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dtos\\IsaretciDto.cs",
+              "RelativeDocumentMoniker": "droneWEB.Core\\Dtos\\IsaretciDto.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dtos\\IsaretciDto.cs*",
+              "RelativeToolTip": "droneWEB.Core\\Dtos\\IsaretciDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T14:04:19.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IsaretciResponse.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Responses\\IsaretciResponse.cs",
+              "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Responses\\IsaretciResponse.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Responses\\IsaretciResponse.cs*",
+              "RelativeToolTip": "droneWEB.Core\\Dto\\Responses\\IsaretciResponse.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T14:03:57.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "KullaniciRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Data\\Repository\\KullaniciRepository.cs",
+              "RelativeDocumentMoniker": "droneWEB.Data\\Repository\\KullaniciRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Data\\Repository\\KullaniciRepository.cs",
+              "RelativeToolTip": "droneWEB.Data\\Repository\\KullaniciRepository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAowE8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-26T19:54:58.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IsaretciGuncelleRequest.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\IsaretciGuncelleRequest.cs",
+              "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Requests\\IsaretciGuncelleRequest.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\IsaretciGuncelleRequest.cs*",
+              "RelativeToolTip": "droneWEB.Core\\Dto\\Requests\\IsaretciGuncelleRequest.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T14:03:35.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IsaretciOlusturRequest.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\IsaretciOlusturRequest.cs",
+              "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Requests\\IsaretciOlusturRequest.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\IsaretciOlusturRequest.cs*",
+              "RelativeToolTip": "droneWEB.Core\\Dto\\Requests\\IsaretciOlusturRequest.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T14:03:10.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Views\\Home\\Index.cshtml",
@@ -146,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "KullaniciController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Controllers\\KullaniciController.cs",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Controllers\\KullaniciController.cs",
@@ -154,12 +299,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\Controllers\\KullaniciController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-25T18:04:31.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T18:04:31.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Kayit.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Views\\Kullanici\\Kayit.cshtml",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Views\\Kullanici\\Kayit.cshtml",
@@ -167,12 +311,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Kullanici\\Kayit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T18:07:42.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T18:07:42.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
               "Title": "Layout.css",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\Layout.css",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\wwwroot\\css\\Layout.css",
@@ -180,12 +323,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\wwwroot\\css\\Layout.css",
               "ViewState": "AgIAAFIAAAAAAAAAAAAIwF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-26T15:28:02.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T15:28:02.389Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\wwwroot\\css\\site.css",
@@ -193,12 +335,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAA0AAAAAAAAAAAAkwCIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-26T15:24:25.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T15:24:25.007Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "styles.css",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez web\\droneWEB\\droneWEB.WebUI\\clientapp\\src\\styles.css",
               "RelativeDocumentMoniker": "..\\..\\tez web\\droneWEB\\droneWEB.WebUI\\clientapp\\src\\styles.css",
@@ -206,12 +347,11 @@
               "RelativeToolTip": "..\\..\\tez web\\droneWEB\\droneWEB.WebUI\\clientapp\\src\\styles.css",
               "ViewState": "AgIAABsAAAAAAAAAAAAAABsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-09-26T15:21:27.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T15:21:27.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "KullaniciItem.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Models\\KullaniciItem.cs",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Models\\KullaniciItem.cs",
@@ -219,12 +359,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\Models\\KullaniciItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T11:19:20.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-28T11:19:20.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "KullaniciServisi.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Service\\KullaniciServisi.cs",
               "RelativeDocumentMoniker": "droneWEB.Service\\KullaniciServisi.cs",
@@ -232,12 +371,11 @@
               "RelativeToolTip": "droneWEB.Service\\KullaniciServisi.cs",
               "ViewState": "AgIAAHcAAAAAAAAAAAA0wIQAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:55:05.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T19:55:05.954Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 19,
               "Title": "YetkiViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Models\\YetkiViewModel.cs",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Models\\YetkiViewModel.cs",
@@ -245,12 +383,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\Models\\YetkiViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T17:16:32.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T17:16:32.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "RolItem.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Models\\RolItem.cs",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Models\\RolItem.cs",
@@ -258,25 +395,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\Models\\RolItem.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T17:17:35.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T17:17:35.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "KullaniciRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Data\\Repository\\KullaniciRepository.cs",
-              "RelativeDocumentMoniker": "droneWEB.Data\\Repository\\KullaniciRepository.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Data\\Repository\\KullaniciRepository.cs",
-              "RelativeToolTip": "droneWEB.Data\\Repository\\KullaniciRepository.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAkwEwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:54:58.045Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Giris.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Views\\Kullanici\\Giris.cshtml",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Views\\Kullanici\\Giris.cshtml",
@@ -284,12 +407,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Kullanici\\Giris.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-25T18:08:15.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-25T18:08:15.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 20,
               "Title": "KullaniciItem.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dtos\\KullaniciItem.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dtos\\KullaniciItem.cs",
@@ -297,12 +419,11 @@
               "RelativeToolTip": "droneWEB.Core\\Dtos\\KullaniciItem.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAkwAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T11:14:10.403Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-28T11:14:10.403Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "YetkiAta.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Views\\Kullanici\\YetkiAta.cshtml",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Views\\Kullanici\\YetkiAta.cshtml",
@@ -310,12 +431,11 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Kullanici\\YetkiAta.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAwwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-27T17:20:18.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T17:20:18.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "Kullanici.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dtos\\Kullanici.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dtos\\Kullanici.cs",
@@ -323,12 +443,11 @@
               "RelativeToolTip": "droneWEB.Core\\Dtos\\Kullanici.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAqwBEAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T16:52:25.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T16:52:25.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "SmsServisi.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Service\\SmsServisi.cs",
               "RelativeDocumentMoniker": "droneWEB.Service\\SmsServisi.cs",
@@ -340,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Api\\appsettings.json",
               "RelativeDocumentMoniker": "droneWEB.Api\\appsettings.json",
@@ -348,12 +467,11 @@
               "RelativeToolTip": "droneWEB.Api\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-22T07:50:04.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-22T07:50:04.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "RolItem.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dtos\\RolItem.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dtos\\RolItem.cs",
@@ -365,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "YetkiIstek.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\YetkiIstek.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Requests\\YetkiIstek.cs",
@@ -373,12 +491,11 @@
               "RelativeToolTip": "droneWEB.Core\\Dto\\Requests\\YetkiIstek.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T16:58:16.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-27T16:58:16.817Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "KayitIstek.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\KayitIstek.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Requests\\KayitIstek.cs",
@@ -390,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "GirisYanit.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Responses\\GirisYanit.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Responses\\GirisYanit.cs",
@@ -402,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "GirisIstek.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\GirisIstek.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Requests\\GirisIstek.cs",
@@ -414,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "RolAtaIstek.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\RolAtaIstek.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Requests\\RolAtaIstek.cs",
@@ -426,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "SmsGonderIstek.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\Dto\\Requests\\SmsGonderIstek.cs",
               "RelativeDocumentMoniker": "droneWEB.Core\\Dto\\Requests\\SmsGonderIstek.cs",
@@ -438,19 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Api\\Program.cs",
-              "RelativeDocumentMoniker": "droneWEB.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Api\\Program.cs",
-              "RelativeToolTip": "droneWEB.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T19:19:42.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "GirisResponse.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Models\\GirisResponse.cs",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Models\\GirisResponse.cs",
@@ -462,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "GirisViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Models\\GirisViewModel.cs",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Models\\GirisViewModel.cs",
@@ -474,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "SmsController.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Api\\Controllers\\SmsController.cs",
               "RelativeDocumentMoniker": "droneWEB.Api\\Controllers\\SmsController.cs",
@@ -486,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "KayitViewModel.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Models\\KayitViewModel.cs",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Models\\KayitViewModel.cs",
@@ -498,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Program.cs",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Program.cs",

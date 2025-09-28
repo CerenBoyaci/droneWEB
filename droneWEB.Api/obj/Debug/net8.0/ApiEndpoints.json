@@ -1,5 +1,47 @@
 [
   {
+    "ContainingType": "droneWEB.Api.Controllers.HaritalamaController",
+    "Method": "Guncelle",
+    "RelativePath": "api/Haritalama/guncelle",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "droneWEB.Core.Dtos.Request.IsaretciGuncelleRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.HaritalamaController",
+    "Method": "Olustur",
+    "RelativePath": "api/Haritalama/olustur",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "droneWEB.Core.Dtos.Request.IsaretciOlusturRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "droneWEB.Api.Controllers.HaritalamaController",
+    "Method": "TumIsaretciler",
+    "RelativePath": "api/Haritalama/tum-isaretciler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "droneWEB.Api.Controllers.KullaniciController",
     "Method": "KullaniciAra",
     "RelativePath": "api/Kullanici/ara",

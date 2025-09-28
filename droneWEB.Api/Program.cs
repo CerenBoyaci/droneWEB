@@ -14,6 +14,8 @@ builder.Services.AddScoped<KullaniciServisi>();
 builder.Services.AddScoped<SmsRepository>();
 builder.Services.AddScoped<SmsServisi>();
 builder.Services.AddHttpClient<SmsServisi>();
+builder.Services.AddScoped<HaritalamaRepository>();
+builder.Services.AddScoped<HaritalamaServisi>();
 
 // CORS
 builder.Services.AddCors(options =>

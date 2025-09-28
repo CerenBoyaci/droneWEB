@@ -5,6 +5,80 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Haritalama/tum-isaretciler": {
+      "get": {
+        "tags": [
+          "Haritalama"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Haritalama/olustur": {
+      "post": {
+        "tags": [
+          "Haritalama"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IsaretciOlusturRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IsaretciOlusturRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/IsaretciOlusturRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Haritalama/guncelle": {
+      "put": {
+        "tags": [
+          "Haritalama"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IsaretciGuncelleRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IsaretciGuncelleRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/IsaretciGuncelleRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Kullanici/kayit-ol": {
       "post": {
         "tags": [
@@ -286,6 +360,46 @@
           "sifre": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IsaretciGuncelleRequest": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "baslik": {
+            "type": "string",
+            "nullable": true
+          },
+          "enlem": {
+            "type": "number",
+            "format": "double"
+          },
+          "boylam": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "IsaretciOlusturRequest": {
+        "type": "object",
+        "properties": {
+          "baslik": {
+            "type": "string",
+            "nullable": true
+          },
+          "enlem": {
+            "type": "number",
+            "format": "double"
+          },
+          "boylam": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
