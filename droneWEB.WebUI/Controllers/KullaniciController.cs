@@ -1,11 +1,12 @@
 ﻿using droneWEB.WebUI.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Net.Http.Json;
 
 namespace droneWEB.WebUI.Controllers
 {
-    public class KullaniciController : Controller
+    public class KullaniciController : BaseController
     {
         private readonly HttpClient _httpClient;
 
@@ -16,12 +17,14 @@ namespace droneWEB.WebUI.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Kayit()
         {
             return View();
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Kayit(KayitViewModel model)
         {
             if (!ModelState.IsValid)
@@ -34,7 +37,7 @@ namespace droneWEB.WebUI.Controllers
             if (response.IsSuccessStatusCode)
             {
                 ViewBag.Mesaj = "Kayıt başarılı!";
-                return View();
+                return RedirectToAction("Giris", "Kullanici");
             }
 
             var hata = await response.Content.ReadAsStringAsync();
@@ -42,6 +45,7 @@ namespace droneWEB.WebUI.Controllers
             return View(model);
         }
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Giris()
         {
             return View();
@@ -73,6 +77,7 @@ namespace droneWEB.WebUI.Controllers
           }*/
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Giris(GirisViewModel model)
         {
             if (!ModelState.IsValid)
@@ -90,13 +95,27 @@ namespace droneWEB.WebUI.Controllers
                     HttpContext.Session.SetString("AdSoyad", tokenResponse.AdSoyad);
                     HttpContext.Session.SetString("Token", tokenResponse.Token);
 
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Anasayfa", "Kullanici");
                 }
             }
 
             var hata = await response.Content.ReadAsStringAsync();
             ModelState.AddModelError("", hata);
             return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult Anasayfa()
+        {
+            var adSoyad = HttpContext.Session.GetString("AdSoyad");
+            var kullaniciId = HttpContext.Session.GetString("KullaniciId");
+            var token = HttpContext.Session.GetString("Token");
+
+            ViewBag.AdSoyad = adSoyad;
+            ViewBag.KullaniciId = kullaniciId;
+            ViewBag.Token = token;
+
+            return View();
         }
 
         [HttpGet]

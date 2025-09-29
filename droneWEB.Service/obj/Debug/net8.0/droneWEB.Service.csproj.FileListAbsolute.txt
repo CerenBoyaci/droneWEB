@@ -50,3 +50,21 @@ C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\refi
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.pdb
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\ref\droneWEB.Service.dll
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.sourcelink.json
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.deps.json
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Core.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Data.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Core.pdb
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\bin\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.csproj.AssemblyReference.cache
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.AssemblyInfoInputs.cache
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.AssemblyInfo.cs
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.csproj.CoreCompileInputs.cache
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.sourcelink.json
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.5B73ADC4.Up2Date
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\refint\droneWEB.Service.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\droneWEB.Service.pdb
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Service\obj\Debug\net8.0\ref\droneWEB.Service.dll

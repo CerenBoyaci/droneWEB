@@ -1,65 +1,26 @@
-﻿<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <title>Register Test</title>
-    <style>
-        html, body {
-            height: 100%; /* gövde tam ekranı kapsasın */
-            margin: 0;
-        }
+﻿@{
+    ViewData["Title"] = "Hoş Geldiniz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
-        .register-container {
-            display: flex;
-            justify-content: center; /* yatay ortala */
-            align-items: center; /* dikey ortala */
-            height: 100vh; /* ekranın tamamını kapla */
-            padding: 20px;
-        }
-
-
-
-        .register-container {
-            display: flex;
-            justify-content: center; /* yatayda ortala */
-            align-items: center; /* dikeyde ortala */
-            min-height: 100vh; /* tüm ekranı kapla */
-            padding: 20px;
-        }
-
-        .register-box {
-            background: #fff;
-            border-radius: 8px;
-            padding: 40px;
-            width: 100%;
-            max-width: 400px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-
-        .btn-register {
-            width: 100%;
-            padding: 12px;
-            background: #cc0000;
-            border: none;
-            color: #fff;
-            font-size: 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-            .btn-register:hover {
-                background: #a30000;
-            }
-    </style>
-</head>
-<body>
+<section class="text-center text-white">
     <div class="register-container">
         <div class="register-box">
-            <h2>Kayıt Formu</h2>
-            <button class="btn-register">Kaydol</button>
+            <h1 class="mb-3">Güvenlik ve Koruma Merkezi</h1>
+            <p class="lead mb-4">
+                kdjhfdkghbslkdfjmşlsghnfdjkghdfkgjh
+            </p>
+
+            <p class="mb-4">
+                <a class="btn btn-lg btn-light fw-bold mb-2" href="/Kullanici/Kayit">Hemen Kaydol</a>
+                <a class="btn btn-lg btn-outline-light fw-bold" href="/Kullanici/Giris">Giriş Yap</a>
+            </p>
+
+            <ul class="list-unstyled mb-0 text-start">
+                <li>🔒 aaaaaaa</li>
+                <li>🛡️ bbbbbbb</li>
+                <li>⚠️ aaaaaa</li>
+            </ul>
         </div>
     </div>
-</body>
-</html>
-
+</section>

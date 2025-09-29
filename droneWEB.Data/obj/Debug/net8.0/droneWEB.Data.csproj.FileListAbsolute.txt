@@ -44,3 +44,19 @@ C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Data\obj\Debug\net8.0\refint\
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.pdb
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Data\obj\Debug\net8.0\ref\droneWEB.Data.dll
 C:\Users\ASUS\Documents\tez webb\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.sourcelink.json
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\bin\Debug\net8.0\droneWEB.Data.deps.json
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\bin\Debug\net8.0\droneWEB.Data.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\bin\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\bin\Debug\net8.0\droneWEB.Core.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\bin\Debug\net8.0\droneWEB.Core.pdb
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.csproj.AssemblyReference.cache
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.AssemblyInfoInputs.cache
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.AssemblyInfo.cs
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.csproj.CoreCompileInputs.cache
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.sourcelink.json
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.761779EE.Up2Date
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\refint\droneWEB.Data.dll
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\droneWEB.Data.pdb
+C:\Users\Pau\Documents\GitHub\droneWEB\droneWEB.Data\obj\Debug\net8.0\ref\droneWEB.Data.dll

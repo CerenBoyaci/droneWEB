@@ -1,5 +1,7 @@
 ﻿@{
-    ViewBag.Title = "Harita";
+    ViewData["Title"] = "Harita";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+
 }
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -7,10 +9,10 @@
 
 <h2>Harita</h2>
 
-<!-- Harita alanı -->
+
 <div id="map" style="width:100%; height:500px;"></div>
 
-<!-- Yeni marker ekleme formu -->
+
 <div style="margin-top:20px;">
     <input type="text" id="baslik" placeholder="Başlık" />
     <input type="number" id="enlem" placeholder="Enlem" step="0.000001" />
@@ -19,20 +21,19 @@
 </div>
 
 <script>
-    // 1. Haritayı oluştur
-    var map = L.map('map').setView([39.9208, 32.8541], 13); // Ankara koordinatları
+   
+    var map = L.map('map').setView([39.9208, 32.8541], 13); 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // 2. Marker layer group
+   
     var markersLayer = L.layerGroup().addTo(map);
 
-    // 3. API'den markerları çek ve haritaya ekle
     async function loadMarkers() {
         markersLayer.clearLayers();
         try {
-            const response = await fetch('/Haritalama/tum-isaretciler');
+            const response = await fetch('https://localhost:7130/api/Haritalama/tum-isaretciler');
             const data = await response.json();
 
             data.forEach(marker => {
@@ -47,7 +48,7 @@
 
     loadMarkers();
 
-    // 4. Yeni marker ekleme
+    
     async function ekleMarker() {
         const baslik = document.getElementById('baslik').value;
         const enlem = parseFloat(document.getElementById('enlem').value);
@@ -59,7 +60,7 @@
         }
 
         try {
-            const response = await fetch('/Haritalama/olustur', {
+            const response = await fetch('https://localhost:7130/api/Haritalama/olustur', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ baslik, enlem, boylam })

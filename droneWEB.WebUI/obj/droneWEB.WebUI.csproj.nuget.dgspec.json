@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\droneWEB.WebUI.csproj": {}
+    "C:\\Users\\Pau\\Documents\\GitHub\\droneWEB\\droneWEB.WebUI\\droneWEB.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\droneWEB.WebUI.csproj": {
+    "C:\\Users\\Pau\\Documents\\GitHub\\droneWEB\\droneWEB.WebUI\\droneWEB.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\droneWEB.WebUI.csproj",
+        "projectUniqueName": "C:\\Users\\Pau\\Documents\\GitHub\\droneWEB\\droneWEB.WebUI\\droneWEB.WebUI.csproj",
         "projectName": "droneWEB.WebUI",
-        "projectPath": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\droneWEB.WebUI.csproj",
-        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\obj\\",
+        "projectPath": "C:\\Users\\Pau\\Documents\\GitHub\\droneWEB\\droneWEB.WebUI\\droneWEB.WebUI.csproj",
+        "packagesPath": "C:\\Users\\Pau\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pau\\Documents\\GitHub\\droneWEB\\droneWEB.WebUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Pau\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -98,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

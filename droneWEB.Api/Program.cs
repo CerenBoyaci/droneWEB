@@ -22,7 +22,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("https://localhost:7053") // Web UI portunu yaz
+        policy.WithOrigins("https://localhost:7053", "http://localhost:7053") 
               .AllowAnyHeader()
               .AllowAnyMethod();
     });

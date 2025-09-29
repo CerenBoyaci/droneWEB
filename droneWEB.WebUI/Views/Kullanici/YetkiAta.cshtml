@@ -1,22 +1,58 @@
 ﻿@model droneWEB.WebUI.Models.YetkiViewModel
+@{
+    ViewData["Title"] = "Yetki Ata";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
 
-<h2>Kullanıcıya Yetki Ata</h2>
-
-<form asp-action="YetkiAta" method="post">
-    <div>
-        <label>Kullanıcı Seç:</label>
-        <select asp-for="KullaniciId" asp-items="Model.KullaniciSecenekleri">
-            <option value="">Seçiniz</option>
-        </select>
+<div class="container py-5">
+    <div class="text-center mb-4">
+        <h2>Kullanıcıya Yetki Ata</h2>
+        <p class="text-muted">Aşağıdaki formu doldurarak kullanıcıya roller atayabilirsiniz.</p>
     </div>
 
-    <div>
-        <label>Rol Seç (Ctrl ile çoklu seçilebilir):</label>
-        <select asp-for="RolIdListesi" asp-items="Model.RolSecenekleri" multiple="multiple">
-        </select>
-    </div>
+    <form asp-action="YetkiAta" method="post" class="needs-validation" novalidate>
+        <div class="row g-3">
 
-    <button type="submit">Yetki Ata</button>
-</form>
+            <div class="col-md-6">
+                <label for="kullanici" class="form-label">Kullanıcı Seç</label>
+                <select asp-for="KullaniciId" asp-items="Model.KullaniciSecenekleri" class="form-select" required>
+                    <option value="">Seçiniz</option>
+                </select>
+                <div class="invalid-feedback">
+                    Lütfen bir kullanıcı seçin.
+                </div>
+            </div>
 
+            <div class="col-md-6">
+                <label for="roller" class="form-label">Rol Seç (Ctrl ile çoklu seçilebilir)</label>
+                <select asp-for="RolIdListesi" asp-items="Model.RolSecenekleri" class="form-select" multiple required>
+                </select>
+                <div class="invalid-feedback">
+                    Lütfen en az bir rol seçin.
+                </div>
+            </div>
 
+        </div>
+
+        <hr class="my-4">
+        <button class="w-100 btn btn-primary btn-lg" type="submit">Yetki Ata</button>
+    </form>
+</div>
+
+@section Scripts {
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+}

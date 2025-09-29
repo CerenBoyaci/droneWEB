@@ -1,0 +1,97 @@
+﻿@* File: Views/Shared/_DashboardLayout.cshtml *@
+@*
+  Bootstrap 5 Dashboard Layout
+  - Sol sidebar
+  - Üst navbar
+  - Main content alanı
+*@
+
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - Güvenlik Merkezi</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true">
+
+    <style>
+        body {
+            font-size: .875rem;
+            background-color: #f8f9fa;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 56px 0 0;
+            width: 250px;
+            background-color: #343a40;
+        }
+
+            .sidebar .nav-link {
+                color: rgba(255,255,255,.9);
+            }
+
+                .sidebar .nav-link.active {
+                    color: #0d6efd;
+                }
+
+        .sidebar-sticky {
+            position: relative;
+            top: 0;
+            height: calc(100vh - 56px);
+            padding-top: .5rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        main {
+            margin-left: 250px;
+            padding: 2rem;
+        }
+
+        .navbar-dark .navbar-brand {
+            color: #fff;
+        }
+    </style>
+
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-sticky">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/Kullanici/Anasayfa">Anasayfa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Harita/Harita">Harita</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Kullanici/YetkiAta">Yetki Ata</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main role="main" class="pt-3">
+        @RenderBody()
+    </main>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
