@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFyaXRhXEhhcml0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pau/Documents/GitHub/droneWEB/droneWEB.WebUI/Views/Harita/RotaHesaplama.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGFyaXRhXFJvdGFIZXNhcGxhbWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pau/Documents/GitHub/droneWEB/droneWEB.WebUI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

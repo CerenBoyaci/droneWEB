@@ -1,0 +1,172 @@
+﻿@{
+    ViewData["Title"] = "Rota Hesaplama";
+    Layout = "~/Views/Shared/_DashboardLayout.cshtml";
+}
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+
+<style>
+    #map {
+        width: 100%;
+        height: 700px; /* Harita boyutu büyütüldü */
+        border: 1px solid #ccc;
+    }
+
+    h2, h5, label {
+        color: black;
+    }
+</style>
+
+<h2>Markerlar Arası Rota Hesaplama</h2>
+
+<div id="map"></div>
+
+<div style="margin-top:20px;">
+    <h5>Marker Seçerek Rota</h5>
+    <label>Başlangıç Marker:</label>
+    <select id="baslangicMarker"></select>
+
+    <label>Bitiş Marker:</label>
+    <select id="bitisMarker"></select>
+
+    <button onclick="rotaHesapla()">Rotayı Göster</button>
+</div>
+
+<div style="margin-top:20px;">
+    <h5>Koordinattan Rota</h5>
+    <input type="number" id="enlemBaslangic" placeholder="Başlangıç Enlem" step="0.000001">
+    <input type="number" id="boylamBaslangic" placeholder="Başlangıç Boylam" step="0.000001">
+    <input type="number" id="enlemBitis" placeholder="Bitiş Enlem" step="0.000001">
+    <input type="number" id="boylamBitis" placeholder="Bitiş Boylam" step="0.000001">
+    <button onclick="rotaKoordinattan()">Rota Hesapla</button>
+</div>
+
+<div id="rotaBilgi" style="margin-top:10px; font-weight:bold;"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+
+<script>
+    var map = L.map('map').setView([39.9208, 32.8541], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    var markersLayer = L.layerGroup().addTo(map);
+    var routingControl = null;
+    var markers = [];
+
+    // Markerları API’den çek
+    async function loadMarkers() {
+        try {
+            const response = await fetch('https://localhost:7130/api/Haritalama/tum-isaretciler');
+            const data = await response.json();
+
+            markersLayer.clearLayers();
+            markers = data;
+
+            const baslangicSelect = document.getElementById('baslangicMarker');
+            const bitisSelect = document.getElementById('bitisMarker');
+            baslangicSelect.innerHTML = '';
+            bitisSelect.innerHTML = '';
+
+            data.forEach((marker, index) => {
+                L.marker([marker.enlem, marker.boylam])
+                    .bindPopup(marker.baslik)
+                    .addTo(markersLayer);
+
+                const option1 = document.createElement('option');
+                option1.value = index;
+                option1.text = marker.baslik;
+                baslangicSelect.add(option1);
+
+                const option2 = document.createElement('option');
+                option2.value = index;
+                option2.text = marker.baslik;
+                bitisSelect.add(option2);
+            });
+        } catch (error) {
+            console.error("Markerları yüklerken hata oluştu:", error);
+        }
+    }
+
+    loadMarkers();
+
+    // Marker seçerek rota hesapla
+    function rotaHesapla() {
+        const baslangicIndex = parseInt(document.getElementById('baslangicMarker').value);
+        const bitisIndex = parseInt(document.getElementById('bitisMarker').value);
+
+        if (isNaN(baslangicIndex) || isNaN(bitisIndex)) {
+            alert("Lütfen başlangıç ve bitiş markerlarını seçin!");
+            return;
+        }
+
+        const baslangic = markers[baslangicIndex];
+        const bitis = markers[bitisIndex];
+
+        if (routingControl) map.removeControl(routingControl);
+
+        routingControl = L.Routing.control({
+            waypoints: [
+                L.latLng(baslangic.enlem, baslangic.boylam),
+                L.latLng(bitis.enlem, bitis.boylam)
+            ],
+            routeWhileDragging: true,
+            showAlternatives: true,
+            lineOptions: { styles: [{ color: 'blue', opacity: 0.6, weight: 5 }] },
+            createMarker: function() { return null; }
+        }).addTo(map);
+
+        routingControl.on('routesfound', function(e) {
+            const routes = e.routes;
+            if (routes && routes.length > 0) {
+                const summary = routes[0].summary;
+                const distance = (summary.totalDistance / 1000).toFixed(2);
+                const time = Math.ceil(summary.totalTime / 60);
+                document.getElementById('rotaBilgi').innerText =
+                    `Mesafe: ${distance} km, Tahmini Süre: ${time} dk`;
+            }
+        });
+    }
+
+    // Dışarıdan koordinat ile rota hesapla
+    function rotaKoordinattan() {
+        const lat1 = parseFloat(document.getElementById('enlemBaslangic').value);
+        const lon1 = parseFloat(document.getElementById('boylamBaslangic').value);
+        const lat2 = parseFloat(document.getElementById('enlemBitis').value);
+        const lon2 = parseFloat(document.getElementById('boylamBitis').value);
+
+        if (isNaN(lat1) || isNaN(lon1) || isNaN(lat2) || isNaN(lon2)) {
+            alert("Lütfen geçerli koordinatlar girin!");
+            return;
+        }
+
+        if (routingControl) map.removeControl(routingControl);
+
+        routingControl = L.Routing.control({
+            waypoints: [
+                L.latLng(lat1, lon1),
+                L.latLng(lat2, lon2)
+            ],
+            routeWhileDragging: true,
+            showAlternatives: true,
+            lineOptions: { styles: [{ color: 'green', opacity: 0.6, weight: 5 }] },
+            createMarker: function() { return null; }
+        }).addTo(map);
+
+        routingControl.on('routesfound', function(e) {
+            const routes = e.routes;
+            if (routes && routes.length > 0) {
+                const summary = routes[0].summary;
+                const distance = (summary.totalDistance / 1000).toFixed(2);
+                const time = Math.ceil(summary.totalTime / 60);
+                document.getElementById('rotaBilgi').innerText =
+                    `Mesafe: ${distance} km, Tahmini Süre: ${time} dk`;
+            }
+        });
+
+        map.setView([lat1, lon1], 13);
+    }
+</script>
