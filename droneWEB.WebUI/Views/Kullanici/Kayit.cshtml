@@ -1,4 +1,6 @@
 ﻿@model droneWEB.WebUI.Models.KayitViewModel
+@using droneWEB.WebUI.Helpers
+
 @{
     Layout = "_LayoutKullanici";
     ViewData["Title"] = "Kayıt Ol";
@@ -72,7 +74,7 @@
                         <span asp-validation-for="Sifre" class="text-danger"></span>
                     </div>
                 </div>
-
+                <div>@Html.RenderCaptcha("CaptchaInput")</div>
                 <div class="text-center">
                     <button type="submit" class="btn neon-btn w-50" style="padding:8px 24px; font-size:18px;">Kayıt Ol</button>
 
@@ -89,7 +91,7 @@
                         </a>
                     </div>
 
-
+                 
                 </div>
             </form>
         </div>

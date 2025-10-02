@@ -1,4 +1,5 @@
 ﻿@model droneWEB.WebUI.Models.GirisViewModel
+@using droneWEB.WebUI.Helpers
 @{
     Layout = "_LayoutKullanici";
     ViewData["Title"] = "Giriş Yap";
@@ -38,10 +39,14 @@
             </div>
         </div>
 
+        <div>@Html.RenderCaptcha("CaptchaInput")</div>
+        
+
         <div class="text-center">
             <button type="submit" class="neon-btn w-50" style="padding:8px 20px; font-size:16px;">Giriş Yap</button>
         </div>
 
+        
 
         <div class="text-center mt-3">
             <a href="@Url.Action("Kayit", "Kullanici")"
