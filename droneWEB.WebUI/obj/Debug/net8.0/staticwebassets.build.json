@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PqdAXneMuccmZC68z0M+4jdzVU+1IbwgMZsXVRR0LC0=",
+  "Hash": "cRUg00UWVJai+QY6G/P56wJggoYvpNMXMaVwv1klWiE=",
   "Source": "droneWEB.WebUI",
   "BasePath": "_content/droneWEB.WebUI",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "styycft0er",
-      "Integrity": "MCNlhw5dxtWub9TUkO/h4p1/Fe+to768olw3d9YR3bA=",
+      "Fingerprint": "9myrlfh9zh",
+      "Integrity": "//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Layout.css"
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "w9arbwq3qg",
-      "Integrity": "xDd+yv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM=",
+      "Fingerprint": "8hi247uur6",
+      "Integrity": "9NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\img\\Adsız tasarım.png",
+      "SourceId": "droneWEB.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\",
+      "BasePath": "_content/droneWEB.WebUI",
+      "RelativePath": "img/Adsız tasarım#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ijm8lqz96t",
+      "Integrity": "4o7xghsURGKBsR5yENksHA+0WZuCNYzLCw+CqlNNSl8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Adsız tasarım.png"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\img\\DroneVision Logo with Neon Glow Effects.png",
@@ -1363,6 +1384,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/Layout.9myrlfh9zh.css",
+      "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\Layout.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 11:36:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9myrlfh9zh"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Layout.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM="
+        }
+      ]
+    },
+    {
       "Route": "css/Layout.css",
       "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\Layout.css",
       "Selectors": [],
@@ -1373,7 +1439,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "270"
+          "Value": "4800"
         },
         {
           "Name": "Content-Type",
@@ -1381,11 +1447,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MCNlhw5dxtWub9TUkO/h4p1/Fe+to768olw3d9YR3bA=\""
+          "Value": "\"//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Oct 2025 09:26:30 GMT"
+          "Value": "Thu, 02 Oct 2025 11:36:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1395,13 +1461,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MCNlhw5dxtWub9TUkO/h4p1/Fe+to768olw3d9YR3bA="
+          "Value": "sha256-//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM="
         }
       ]
     },
     {
-      "Route": "css/Layout.styycft0er.css",
-      "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\Layout.css",
+      "Route": "css/site.8hi247uur6.css",
+      "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1410,7 +1476,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "270"
+          "Value": "3110"
         },
         {
           "Name": "Content-Type",
@@ -1418,11 +1484,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MCNlhw5dxtWub9TUkO/h4p1/Fe+to768olw3d9YR3bA=\""
+          "Value": "\"9NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Oct 2025 09:26:30 GMT"
+          "Value": "Thu, 02 Oct 2025 11:36:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1432,15 +1498,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "styycft0er"
+          "Value": "8hi247uur6"
         },
         {
           "Name": "label",
-          "Value": "css/Layout.css"
+          "Value": "css/site.css"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-MCNlhw5dxtWub9TUkO/h4p1/Fe+to768olw3d9YR3bA="
+          "Value": "sha256-9NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ="
         }
       ]
     },
@@ -1455,7 +1521,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4453"
+          "Value": "3110"
         },
         {
           "Name": "Content-Type",
@@ -1463,11 +1529,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xDd+yv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM=\""
+          "Value": "\"9NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 15:32:44 GMT"
+          "Value": "Thu, 02 Oct 2025 11:36:30 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1477,52 +1543,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xDd+yv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.w9arbwq3qg.css",
-      "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4453"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"xDd+yv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 26 Sep 2025 15:32:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "w9arbwq3qg"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-xDd+yv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM="
+          "Value": "sha256-9NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ="
         }
       ]
     },
@@ -1769,6 +1790,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "img/Adsız tasarım.ijm8lqz96t.png",
+      "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\img\\Adsız tasarım.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1313697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4o7xghsURGKBsR5yENksHA+0WZuCNYzLCw+CqlNNSl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 11:17:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ijm8lqz96t"
+        },
+        {
+          "Name": "label",
+          "Value": "img/Adsız tasarım.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4o7xghsURGKBsR5yENksHA+0WZuCNYzLCw+CqlNNSl8="
+        }
+      ]
+    },
+    {
+      "Route": "img/Adsız tasarım.png",
+      "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\img\\Adsız tasarım.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1313697"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4o7xghsURGKBsR5yENksHA+0WZuCNYzLCw+CqlNNSl8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 02 Oct 2025 11:17:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4o7xghsURGKBsR5yENksHA+0WZuCNYzLCw+CqlNNSl8="
         }
       ]
     },

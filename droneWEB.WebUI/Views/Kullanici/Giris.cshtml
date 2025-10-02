@@ -4,20 +4,11 @@
     ViewData["Title"] = "Giriş Yap";
 }
 
-<div class="card p-4 shadow" style="max-width: 500px; width:100%;">
+
     
 
-    <div class="card p-4 shadow" style="max-width: 500px; width:100%; margin:auto;">
-    <div class="d-flex justify-content-center mb-4">
-        <a asp-action="Giris" 
-           class="btn me-2 @(ViewData["Title"]?.ToString() == "Giriş Yap" ? "btn-light text-primary border-primary" : "btn-primary")">
-            Giriş Yap
-        </a>
-        <a asp-action="Kayit" 
-           class="btn @(ViewData["Title"]?.ToString() == "Kayıt Ol" ? "btn-light text-primary border-primary" : "btn-primary")">
-            Kayıt Ol
-        </a>
-    </div>
+    <div >
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
 
     @if (ViewData.ModelState.Values.SelectMany(v => v.Errors).Any())
@@ -30,26 +21,40 @@
         </div>
     }
 
-    <form asp-action="Giris" method="post">
+    <form asp-action="Giris" method="post"
+          style="background-color:#25254A; padding:30px; border-radius:15px; box-shadow:0 0 20px rgba(0,212,255,0.6); border:2px solid #00d4ff; backdrop-filter: blur(8px);">
+
         <div class="row mb-3 align-items-center">
             <label for="inputEmail" class="col-sm-3 col-form-label">Eposta</label>
             <div class="col-sm-9">
-                <input asp-for="Eposta" class="form-control" id="inputEmail" placeholder="Eposta" />
+                <input asp-for="Eposta" class="form-control" id="inputEmail"  />
             </div>
         </div>
 
         <div class="row mb-3 align-items-center">
             <label for="inputPassword" class="col-sm-3 col-form-label">Şifre</label>
             <div class="col-sm-9">
-                <input asp-for="Sifre" type="password" class="form-control" id="inputPassword" placeholder="Şifre" />
+                <input asp-for="Sifre" type="password" class="form-control" id="inputPassword"  />
             </div>
         </div>
 
         <div class="text-center">
-            <button class="btn btn-lg btn-primary w-50" type="submit">Giriş Yap</button>
+            <button type="submit" class="neon-btn w-50" style="padding:8px 20px; font-size:16px;">Giriş Yap</button>
+        </div>
+
+
+        <div class="text-center mt-3">
+            <a href="@Url.Action("Kayit", "Kullanici")"
+               style="color:#ffffff;
+                  text-decoration:none;
+                  font-weight:bold;
+                  text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;">
+                Kayıt Ol
+            </a>
         </div>
     </form>
-</div>
+
+
 
 
 

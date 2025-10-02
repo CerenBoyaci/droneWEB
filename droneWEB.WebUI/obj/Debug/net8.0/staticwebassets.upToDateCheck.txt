@@ -1,6 +1,7 @@
 wwwroot\css\Layout.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\Adsız tasarım.png
 wwwroot\img\DroneVision Logo with Neon Glow Effects.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

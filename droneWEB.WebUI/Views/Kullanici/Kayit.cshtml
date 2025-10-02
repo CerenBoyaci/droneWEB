@@ -4,95 +4,107 @@
     ViewData["Title"] = "Kayıt Ol";
 }
 
-<div class="card p-4 shadow" style="max-width: 600px; width:100%; margin:auto;">
-    <div class="card p-4 shadow" style="max-width: 500px; width:100%; margin:auto;">
-        <div class="d-flex justify-content-center mb-4">
-            <a asp-action="Giris"
-               class="btn me-2 @(ViewData["Title"]?.ToString() == "Giriş Yap" ? "btn-light text-primary border-primary" : "btn-primary")">
-                Giriş Yap
-            </a>
-            <a asp-action="Kayit"
-               class="btn @(ViewData["Title"]?.ToString() == "Kayıt Ol" ? "btn-light text-primary border-primary" : "btn-primary")">
-                Kayıt Ol
-            </a>
+<section class="text-center text-white"; min-height: 100vh; padding: 50px 0;">
+    <div class="register-container">
+
+ 
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+       
+       
+
+    
+        <div>
+
+            @if (ViewBag.Mesaj != null)
+            {
+                <div class="alert @(ViewBag.Basarili == true ? "alert-success" : "alert-danger")">
+                    @ViewBag.Mesaj
+                </div>
+            }
+
+            <form asp-action="Kayit" method="post" style="background-color:#25254A; padding:30px; border-radius:15px; box-shadow:0 0 20px rgba(0,212,255,0.6); border:2px solid #00d4ff; backdrop-filter: blur(8px);">
+                <div class="row mb-3 align-items-center">
+                    <label for="Ad" class="col-sm-3 col-form-label text-white">Ad</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Ad" class="form-control" id="Ad"  />
+                        <span asp-validation-for="Ad" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-3 align-items-center">
+                    <label for="Soyad" class="col-sm-3 col-form-label text-white">Soyad</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Soyad" class="form-control" id="Soyad"  />
+                        <span asp-validation-for="Soyad" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-3 align-items-center">
+                    <label for="Eposta" class="col-sm-3 col-form-label text-white">Eposta</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Eposta" type="email" class="form-control" id="Eposta"  />
+                        <span asp-validation-for="Eposta" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-3 align-items-center">
+                    <label for="TcKimlikNo" class="col-sm-3 col-form-label text-white">TC Kimlik No</label>
+                    <div class="col-sm-9">
+                        <input asp-for="TcKimlikNo" id="TcKimlikNo" class="form-control"  maxlength="11" />
+                        <span asp-validation-for="TcKimlikNo" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-3 align-items-center">
+                    <label for="Telefon" class="col-sm-3 col-form-label text-white">Telefon</label>
+                    <div class="col-sm-9 position-relative">
+                        <span class="position-absolute" style="left:12px; top:50%; transform:translateY(-50%); font-weight:bold; color:#6c757d;">+90</span>
+                        <input asp-for="Telefon" id="Telefon" class="form-control ps-5" maxlength="10" placeholder="___ ___ __ __" />
+                        <span asp-validation-for="Telefon" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="row mb-4 align-items-center">
+                    <label for="Sifre" class="col-sm-3 col-form-label text-white">Şifre</label>
+                    <div class="col-sm-9">
+                        <input asp-for="Sifre" type="password" class="form-control" id="Sifre"  />
+                        <span asp-validation-for="Sifre" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn neon-btn w-50" style="padding:8px 24px; font-size:18px;">Kayıt Ol</button>
+
+                </div>
+
+                <div class="text-center mt-3">
+                    <div class="text-center mt-3">
+                        <a href="@Url.Action("Giris", "Kullanici")"
+                           style="color:#ffffff;
+              text-decoration:none;
+              font-weight:bold;
+              text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;">
+                            Giriş Yap
+                        </a>
+                    </div>
+
+
+                </div>
+            </form>
         </div>
+    </div>
 
-    @if (ViewBag.Mesaj != null)
-    {
-        <div class="alert @(ViewBag.Basarili == true ? "alert-success" : "alert-danger")">
-            @ViewBag.Mesaj
-        </div>
-    }
-
-    <form asp-action="Kayit" method="post">
-        <div class="row mb-3 align-items-center">
-            <label for="Ad" class="col-sm-3 col-form-label">Ad</label>
-            <div class="col-sm-9">
-                <input asp-for="Ad" class="form-control" id="Ad" placeholder="Ad" />
-                <span asp-validation-for="Ad" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row mb-3 align-items-center">
-            <label for="Soyad" class="col-sm-3 col-form-label">Soyad</label>
-            <div class="col-sm-9">
-                <input asp-for="Soyad" class="form-control" id="Soyad" placeholder="Soyad" />
-                <span asp-validation-for="Soyad" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row mb-3 align-items-center">
-            <label for="Eposta" class="col-sm-3 col-form-label">Eposta</label>
-            <div class="col-sm-9">
-                <input asp-for="Eposta" type="email" class="form-control" id="Eposta" placeholder="Eposta" />
-                <span asp-validation-for="Eposta" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row mb-3 align-items-center">
-            <label for="TcKimlikNo" class="col-sm-3 col-form-label">TC Kimlik No</label>
-            <div class="col-sm-9">
-                <input asp-for="TcKimlikNo" id="TcKimlikNo" class="form-control" placeholder="TC Kimlik No" maxlength="11" />
-                <span asp-validation-for="TcKimlikNo" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="row mb-3 align-items-center">
-            <label for="Telefon" class="col-sm-3 col-form-label">Telefon</label>
-            <div class="col-sm-9 position-relative">
-                <!-- +90 ön eki, gri renk -->
-                <span class="position-absolute" style="left:12px; top:50%; transform:translateY(-50%); font-weight:bold; color:#6c757d;">+90</span>
-                <input asp-for="Telefon" id="Telefon" class="form-control ps-5" maxlength="10" placeholder="___ ___ __ __" />
-                <span asp-validation-for="Telefon" class="text-danger"></span>
-            </div>
-        </div>
-
-
-
-
-        <div class="row mb-4 align-items-center">
-            <label for="Sifre" class="col-sm-3 col-form-label">Şifre</label>
-            <div class="col-sm-9">
-                <input asp-for="Sifre" type="password" class="form-control" id="Sifre" placeholder="Şifre" />
-                <span asp-validation-for="Sifre" class="text-danger"></span>
-            </div>
-        </div>
-
-        <div class="text-center">
-            <button type="submit" class="btn btn-lg btn-primary w-50">Kayıt Ol</button>
-        </div>
-    </form>
-</div>
+    
+</section>
 
 @section Scripts {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.8/inputmask.min.js"></script>
     <script>
         $(document).ready(function () {
-            // Telefon maskesi
             Inputmask("999 999 99 99").mask("#Telefon");
 
-            // TC Kimlik ve Telefon sadece rakam
             $("#TcKimlikNo, #Telefon").on("input", function () {
                 this.value = this.value.replace(/[^0-9]/g, '');
             });

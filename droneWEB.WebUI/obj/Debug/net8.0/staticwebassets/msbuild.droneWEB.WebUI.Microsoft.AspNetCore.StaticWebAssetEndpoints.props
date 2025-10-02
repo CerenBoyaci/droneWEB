@@ -1,28 +1,28 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/Layout.9myrlfh9zh.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Layout.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9myrlfh9zh"},{"Name":"integrity","Value":"sha256-//ZqwX\u002BoGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM="},{"Name":"label","Value":"_content/droneWEB.WebUI/css/Layout.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4800"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022//ZqwX\u002BoGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 11:36:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/Layout.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Layout.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-MCNlhw5dxtWub9TUkO/h4p1/Fe\u002Bto768olw3d9YR3bA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"270"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022MCNlhw5dxtWub9TUkO/h4p1/Fe\u002Bto768olw3d9YR3bA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 09:26:30 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-//ZqwX\u002BoGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4800"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022//ZqwX\u002BoGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 11:36:30 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/Layout.styycft0er.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Layout.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/site.8hi247uur6.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"styycft0er"},{"Name":"integrity","Value":"sha256-MCNlhw5dxtWub9TUkO/h4p1/Fe\u002Bto768olw3d9YR3bA="},{"Name":"label","Value":"_content/droneWEB.WebUI/css/Layout.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"270"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022MCNlhw5dxtWub9TUkO/h4p1/Fe\u002Bto768olw3d9YR3bA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 09:26:30 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8hi247uur6"},{"Name":"integrity","Value":"sha256-9NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ="},{"Name":"label","Value":"_content/droneWEB.WebUI/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3110"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 11:36:30 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xDd\u002Byv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4453"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xDd\u002Byv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 15:32:44 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/css/site.w9arbwq3qg.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"w9arbwq3qg"},{"Name":"integrity","Value":"sha256-xDd\u002Byv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM="},{"Name":"label","Value":"_content/droneWEB.WebUI/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4453"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022xDd\u002Byv9XCvN//mRyaMtRCbz00uEdqnSJ4Ld7uV2QvmM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 26 Sep 2025 15:32:44 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-9NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3110"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00229NVarRTP6oOUzJG4A7A8xaO22ME5IbTZ3MuF83ia1VQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 11:36:30 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/droneWEB.WebUI.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\droneWEB.WebUI.pop6omq389.bundle.scp.css'))</AssetFile>
@@ -47,6 +47,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 22 Sep 2025 07:09:00 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/img/Adsız tasarım.ijm8lqz96t.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Adsız tasarım.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ijm8lqz96t"},{"Name":"integrity","Value":"sha256-4o7xghsURGKBsR5yENksHA\u002B0WZuCNYzLCw\u002BCqlNNSl8="},{"Name":"label","Value":"_content/droneWEB.WebUI/img/Ads\u0131z tasar\u0131m.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1313697"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00224o7xghsURGKBsR5yENksHA\u002B0WZuCNYzLCw\u002BCqlNNSl8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 11:17:17 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/img/Adsız tasarım.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\Adsız tasarım.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4o7xghsURGKBsR5yENksHA\u002B0WZuCNYzLCw\u002BCqlNNSl8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1313697"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u00224o7xghsURGKBsR5yENksHA\u002B0WZuCNYzLCw\u002BCqlNNSl8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 02 Oct 2025 11:17:17 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/droneWEB.WebUI/img/DroneVision Logo with Neon Glow Effects.f840ihh1ss.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\img\DroneVision Logo with Neon Glow Effects.png'))</AssetFile>

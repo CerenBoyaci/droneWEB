@@ -1,31 +1,92 @@
-/* Genel sayfa stili */
-
+<style >
+/* Sayfa arka planý */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f5f5; /* Kýrýk beyaz arka plan */
+    background-color: #3A3A6E; /* neon mavi arka plan */
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
-/* Form kapsayýcý (daha büyük boyut, kýrmýzý-lacivert kenar ve daha koyu iç) */
 
+/* Logo */
+.logo {
+    max-width: 450px;
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Neon Butonlar */
+.neon-btn {
+    font-family: 'Russo One', sans-serif;
+    font-size: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 2px solid #00d4ff;
+    color: #e6f7ff;
+    background: transparent;
+    padding: 12px 32px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 8px rgba(0,150,255,0.5), 0 0 16px rgba(0,150,255,0.3);
+    box-shadow: 0 0 10px rgba(0,150,255,0.5), inset 0 0 10px rgba(0,150,255,0.3);
+}
+
+
+    .neon-btn:hover {
+        background: rgba(0, 212, 255, 0.1);
+        color: #fff;
+        box-shadow: 0 0 20px #00d4ff, 0 0 40px #0077ff, inset 0 0 15px rgba(0,212,255,0.5);
+        transform: scale(1.05);
+    }
+
+/* Form - Koyu Lacivert */
 form {
-    background-color: #e0e0e0; /* Arka plandan daha koyu iç */
-    padding: 40px 40px;
-    border-radius: 20px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    background: #10102A; /* Koyu Lacivert / Dark Navy */
+    padding: 30px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,212,255,0.6);
     width: 100%;
-    max-width: 500px; /* Text alanlarýndan daha büyük */
+    max-width: 500px;
     text-align: center;
-    backdrop-filter: blur(10px);
-    border: 2px solid;
-    border-image: linear-gradient(45deg, #ff4d4f, #0b1e4a) 1;
+    border: 2px solid #00d4ff;
+    backdrop-filter: blur(8px);
 }
-/* Üstteki Login/Sign Up butonlarý (form içinde) */
 
+/* Input alanlarý */
+input {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 2px solid #00d4ff;
+    background-color: rgba(255,255,255,0.05);
+    color: #e6f7ff;
+    font-size: 0.9rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+    input:focus {
+        border-color: #00d4ff;
+        background-color: rgba(0,0,50,0.5);
+        box-shadow: 0 0 8px #00d4ff;
+    }
+
+/* Label */
+label {
+    color: #e6f7ff;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Login / SignUp üst butonlarý */
 .login-signup-container {
     display: flex;
     justify-content: space-between;
@@ -36,134 +97,40 @@ form {
         flex: 1;
         padding: 10px;
         margin: 0 5px;
-        background: #fff;
-        border: none;
-        border-radius: 10px;
-        color: #000;
-        font-size: 1rem;
+        background: transparent;
+        border: 2px solid #00d4ff;
+        border-radius: 8px;
+        color: #e6f7ff;
+        font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
     }
 
         .login-signup-container button.active {
-            background: linear-gradient(45deg, #ff4d4f, #0b1e4a);
-            color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+            background: #00d4ff;
+            color: #000;
+            box-shadow: 0 0 10px #00d4ff;
         }
 
         .login-signup-container button:hover {
-            background: linear-gradient(45deg, #0b1e4a, #ff4d4f);
-            color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+            background: rgba(0,212,255,0.2);
+            box-shadow: 0 0 12px #00d4ff;
         }
-/* Inputlar için yeni düzen (daha da küçültüldü) */
 
-.input-group {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
-
-    .input-group input {
-        width: 48%;
-        padding: 6px 8px; /* Daha küçük padding */
-        margin: 5px 0;
-        border-radius: 6px; /* Daha küçük border-radius */
-        border: 2px solid #fff;
-        background-color: rgba(255,255,255,0.1);
-        color: #fff;
-        font-size: 0.8rem; /* Daha küçük font-size */
-        outline: none;
-        transition: all 0.3s ease;
-    }
-
-        .input-group input:focus {
-            border-color: #ff4d4f;
-            background-color: rgba(255,255,255,0.2);
-            box-shadow: 0 0 6px #ff4d4f; /* Daha küçük box-shadow */
-        }
-/* Tekli inputlar (Email, Password) */
-
-.single-input {
-    width: 80%;
-    margin-bottom: 10px;
-}
-
-    .single-input input {
-        width: 100%;
-        padding: 6px 8px; /* Daha küçük padding */
-        margin: 5px 0;
-        border-radius: 6px; /* Daha küçük border-radius */
-        border: 2px solid #fff;
-        background-color: rgba(255,255,255,0.1);
-        color: #fff;
-        font-size: 0.8rem; /* Daha küçük font-size */
-        outline: none;
-        transition: all 0.3s ease;
-    }
-
-        .single-input input:focus {
-            border-color: #ff4d4f;
-            background-color: rgba(255,255,255,0.2);
-            box-shadow: 0 0 6px #ff4d4f; /* Daha küçük box-shadow */
-        }
-/* Checkbox */
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.checkbox-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-/* Butonlar (orijinal efektler korunuyor) */
-
-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background: linear-gradient(45deg, #ff4d4f, #0b1e4a);
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
-}
-
-    button:hover {
-        background: linear-gradient(45deg, #0b1e4a, #ff4d4f);
-        transform: translateY(-3px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.6);
-    }
 /* Mesaj kutusu */
-
 p {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 1rem;
     color: #fff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    text-shadow: 0 0 6px #00d4ff;
 }
-/* Responsive */
 
+/* Responsive */
 @media (max-width: 500px) {
     form {
-        padding: 30px 20px;
-        max-width: 100%; /* Küçük ekranlarda tam geniþlik */
+        padding: 20px 15px;
+        max-width: 100%;
     }
-
-    .input-group {
-        flex-direction: column;
-    }
-
-        .input-group input {
-            width: 100%;
-        }
 }
+
+</style >
