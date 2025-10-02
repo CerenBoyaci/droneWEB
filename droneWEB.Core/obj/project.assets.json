@@ -6058,23 +6058,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pau\\.nuget\\packages\\": {},
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pau\\Documents\\GitHub\\droneWEB\\droneWEB.Core\\droneWEB.Core.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\droneWEB.Core.csproj",
       "projectName": "droneWEB.Core",
-      "projectPath": "C:\\Users\\Pau\\Documents\\GitHub\\droneWEB\\droneWEB.Core\\droneWEB.Core.csproj",
-      "packagesPath": "C:\\Users\\Pau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pau\\Documents\\GitHub\\droneWEB\\droneWEB.Core\\obj\\",
+      "projectPath": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\droneWEB.Core.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Pau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6101,7 +6101,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -6152,7 +6152,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

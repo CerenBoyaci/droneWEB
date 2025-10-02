@@ -5,22 +5,80 @@
 
 <section class="text-center text-white">
     <div class="register-container">
-        <div class="register-box">
-            <h1 class="mb-3">Güvenlik ve Koruma Merkezi</h1>
-            <p class="lead mb-4">
-                kdjhfdkghbslkdfjmşlsghnfdjkghdfkgjh
-            </p>
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
 
-            <p class="mb-4">
-                <a class="btn btn-lg btn-light fw-bold mb-2" href="/Kullanici/Kayit">Hemen Kaydol</a>
-                <a class="btn btn-lg btn-outline-light fw-bold" href="/Kullanici/Giris">Giriş Yap</a>
-            </p>
+        <!-- Logo -->
+        <img src="~/img/DroneVision Logo with Neon Glow Effects.png" alt="DroneVision Logo" class="logo">
 
-            <ul class="list-unstyled mb-0 text-start">
-                <li>🔒 aaaaaaa</li>
-                <li>🛡️ bbbbbbb</li>
-                <li>⚠️ aaaaaa</li>
-            </ul>
-        </div>
+        <!-- Neon yazı -->
+        <h1 class="neon">GÖKBÖRÜ</h1>
+
+        <style>
+            .logo {
+                max-width: 450px;
+                width: 70%;
+                height: auto;
+                margin-bottom: 5px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .neon {
+                font-family: 'Russo One', sans-serif;
+                font-size: clamp(48px, 10vw, 140px);
+                letter-spacing: 0.08em;
+                color: #e6f7ff;
+                text-transform: uppercase;
+                text-align: center;
+                margin: 10px 0;
+                text-shadow: 0 0 8px rgba(0,150,255,0.25), 0 0 18px rgba(0,150,255,0.18), 0 10px 30px rgba(0,0,0,0.6);
+                position: relative;
+                display: inline-block;
+                transform: translateX(-70px) translateY(-40px); /* Sola ve yukarı kaydırıldı */
+            }
+
+                .neon::after {
+                    content: "GÖKBÖRÜ";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    color: transparent;
+                    text-shadow: 0 0 30px #00d4ff, 0 0 60px #0077ff;
+                    -webkit-mask: linear-gradient(#000, rgba(0,0,0,0.05));
+                    transform: translateY(4px) scaleY(1.02);
+                    opacity: 0.85;
+                    pointer-events: none;
+                }
+
+            .neon-btn {
+                font-family: 'Russo One', sans-serif;
+                font-size: 22px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                border: 2px solid #00d4ff;
+                color: #e6f7ff;
+                background: transparent;
+                padding: 12px 32px;
+                margin: 10px;
+                border-radius: 8px;
+                transition: all 0.3s ease-in-out;
+                text-shadow: 0 0 8px rgba(0,150,255,0.5), 0 0 16px rgba(0,150,255,0.3);
+                box-shadow: 0 0 10px rgba(0,150,255,0.5), inset 0 0 10px rgba(0,150,255,0.3);
+            }
+
+                .neon-btn:hover {
+                    background: rgba(0, 150, 255, 0.1);
+                    color: #fff;
+                    box-shadow: 0 0 20px #00d4ff, 0 0 40px #0077ff, inset 0 0 15px rgba(0,150,255,0.5);
+                    transform: scale(1.05);
+                }
+        </style>
+
+        <p class="mb-4">
+            <a class="neon-btn" href="/Kullanici/Kayit">Kayıt Ol</a>
+            <a class="neon-btn" href="/Kullanici/Giris">Giriş Yap</a>
+        </p>
     </div>
 </section>
