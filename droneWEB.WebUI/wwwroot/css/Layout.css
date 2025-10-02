@@ -5,184 +5,74 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" / >
 <title > @ViewData["Title"] - DroneVision</title >
 <!-- Bootstrap & Google Font -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" >
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" >
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" / >
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" / >
 
 <style >
 /* Sayfa arka planý */
 body {
-    background-color: #3A3A6E; /* Açýk lacivert ton */
+    background-color: #3A3A6E;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Arial, sans-serif;
-    padding: 20px;
+    margin: 0;
+    overflow: hidden; /* Scrollbar olmasýn */
 }
 
-/* Logo */
-.logo {
-    max-width: 450px;
-    width: 70%;
-    height: auto;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Neon baþlýk */
-.neon {
-    font-family: 'Russo One', sans-serif;
-    font-size: clamp(48px, 10vw, 140px);
-    letter-spacing: 0.08em;
-    color: #e6f7ff;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px 0;
-    text-shadow: 0 0 8px rgba(0,150,255,0.25), 0 0 18px rgba(0,150,255,0.18), 0 10px 30px rgba(0,0,0,0.6);
-    position: relative;
-    display: inline-block;
-}
-
-    .neon::after {
-        content: "GÖKBÖRÜ";
-        position: absolute;
-        left: 0;
-        top: 0;
-        color: transparent;
-        text-shadow: 0 0 30px #00d4ff, 0 0 60px #0077ff;
-        -webkit-mask: linear-gradient(#000, rgba(0,0,0,0.05));
-        transform: translateY(4px) scaleY(1.02);
-        opacity: 0.85;
-        pointer-events: none;
-    }
-
-/* Neon Butonlar */
-.neon-btn {
-    font-family: 'Russo One', sans-serif;
-    font-size: 22px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    border: 2px solid #00d4ff;
-    color: #e6f7ff;
-    background: transparent;
-    padding: 12px 32px;
-    margin: 10px;
-    border-radius: 8px;
-    transition: all 0.3s ease-in-out;
-    text-shadow: 0 0 8px rgba(0,150,255,0.5), 0 0 16px rgba(0,150,255,0.3);
-    box-shadow: 0 0 10px rgba(0,150,255,0.5), inset 0 0 10px rgba(0,150,255,0.3);
-}
-
-
-    .neon-btn:hover {
-        background: rgba(0, 212, 255, 0.1);
-        color: #fff;
-        box-shadow: 0 0 20px #00d4ff, 0 0 40px #0077ff, inset 0 0 15px rgba(0,212,255,0.5);
-        transform: scale(1.05);
-    }
-
-/* Form - Açýk Koyu Lacivert, biraz daha küçük */
-form {
-    background: #1A1A3F; /* Açýk koyu lacivert */
-    padding: 25px 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(0,212,255,0.6);
+/* Canvas arka plana gelsin */
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* arkada kalsýn */
     width: 100%;
-    max-width: 400px; /* Küçültülmüþ geniþlik */
-    text-align: center;
-    border: 2px solid #00d4ff;
-    backdrop-filter: blur(8px);
-}
-
-/* Input alanlarý */
-input {
-    width: 100%;
-    padding: 8px 10px;
-    margin: 8px 0;
-    border-radius: 6px;
-    border: 2px solid #00d4ff;
-    background-color: rgba(255,255,255,0.05);
-    color: #e6f7ff;
-    font-size: 0.9rem;
-    outline: none;
-    transition: all 0.3s ease;
-}
-
-    input:focus {
-        border-color: #00d4ff;
-        background-color: rgba(26,26,63,0.5);
-        box-shadow: 0 0 8px #00d4ff;
-    }
-
-/* Label */
-label {
-    color: #e6f7ff;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
-
-/* Login / SignUp üst butonlarý */
-.login-signup-container {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-    .login-signup-container button {
-        flex: 1;
-        padding: 10px;
-        margin: 0 5px;
-        background: transparent;
-        border: 2px solid #00d4ff;
-        border-radius: 8px;
-        color: #e6f7ff;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-    }
-
-        .login-signup-container button.active {
-            background: #00d4ff;
-            color: #000;
-            box-shadow: 0 0 10px #00d4ff;
-        }
-
-        .login-signup-container button:hover {
-            background: rgba(0,212,255,0.2);
-            box-shadow: 0 0 12px #00d4ff;
-        }
-
-/* Mesaj kutusu */
-p {
-    margin-top: 15px;
-    font-size: 1rem;
-    color: #fff;
-    text-shadow: 0 0 6px #00d4ff;
-}
-
-/* Responsive */
-@media (max-width: 500px) {
-    form {
-        padding: 20px 15px;
-        max-width: 100%;
-    }
+    height: 100%;
 }
 
 </style >
-</head >
-<body >
-<header class="text-center py-4" >
-<img src="~/img/DroneVision Logo with Neon Glow Effects.png" alt="DroneVision Logo" class="logo" >
-<h1 class="neon" > GÖKBÖRÜ</h1 >
-</header >
+<script >
+// === Three.js sahne ===
+const canvas = document.getElementById("bgCanvas");
+const scene = new THREE.Scene();
 
-<div class="container" >
-@RenderBody()
-</div >
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true });
+renderer.setSize(window.innerWidth, window.innerHeight);
+camera.position.z = 3;
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" > </script >
+// Türkiye haritasý texture yükle
+const textureLoader = new THREE.TextureLoader();
+const turkiyeTexture = textureLoader.load("/img/turkiye.png");
+
+// PlaneGeometry (2D düz yüzey)
+const geometry = new THREE.PlaneGeometry(5, 3); // en-boy oraný haritaya göre ayarlanabilir
+const material = new THREE.MeshBasicMaterial({
+    map: turkiyeTexture,
+    transparent: true,
+    opacity: 0.15,   // soluk görünmesi için
+    color: 0x001f4d  // lacivert ton
+});
+const turkiye = new THREE.Mesh(geometry, material);
+scene.add(turkiye);
+
+// Yavaþça hareket etsin
+function animate() {
+    requestAnimationFrame(animate);
+    turkiye .rotation.z += 0.0005;
+    // çok yavaþ dönsün renderer.render(scene, camera);
+}
+
+animate();
+
+// Responsive
+window.addEventListener("resize", () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+});
+</script >
+
+</script >
+
 @RenderSection("Scripts", required: false)
 </body >
 </html >

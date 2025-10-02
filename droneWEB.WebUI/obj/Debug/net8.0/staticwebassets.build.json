@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cRUg00UWVJai+QY6G/P56wJggoYvpNMXMaVwv1klWiE=",
+  "Hash": "9kKT90VY2+4s53UlT25cb+1jOdsb9mggs9Q9Kgode3s=",
   "Source": "droneWEB.WebUI",
   "BasePath": "_content/droneWEB.WebUI",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9myrlfh9zh",
-      "Integrity": "//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM=",
+      "Fingerprint": "0xqbp8xunm",
+      "Integrity": "BMbpJSGyFSZxJmS0A1nAprS+Xu9ytL9tX8vpLSTpGYE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Layout.css"
@@ -1384,7 +1384,7 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/Layout.9myrlfh9zh.css",
+      "Route": "css/Layout.0xqbp8xunm.css",
       "AssetFile": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\wwwroot\\css\\Layout.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1394,7 +1394,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4800"
+          "Value": "2270"
         },
         {
           "Name": "Content-Type",
@@ -1402,11 +1402,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM=\""
+          "Value": "\"BMbpJSGyFSZxJmS0A1nAprS+Xu9ytL9tX8vpLSTpGYE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Oct 2025 11:36:30 GMT"
+          "Value": "Thu, 02 Oct 2025 16:08:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1416,7 +1416,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9myrlfh9zh"
+          "Value": "0xqbp8xunm"
         },
         {
           "Name": "label",
@@ -1424,7 +1424,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM="
+          "Value": "sha256-BMbpJSGyFSZxJmS0A1nAprS+Xu9ytL9tX8vpLSTpGYE="
         }
       ]
     },
@@ -1439,7 +1439,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4800"
+          "Value": "2270"
         },
         {
           "Name": "Content-Type",
@@ -1447,11 +1447,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM=\""
+          "Value": "\"BMbpJSGyFSZxJmS0A1nAprS+Xu9ytL9tX8vpLSTpGYE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 02 Oct 2025 11:36:30 GMT"
+          "Value": "Thu, 02 Oct 2025 16:08:52 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1461,7 +1461,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-//ZqwX+oGTKpFF1CwG4WfWLgATA3ujIEfSbqqZ5EFeM="
+          "Value": "sha256-BMbpJSGyFSZxJmS0A1nAprS+Xu9ytL9tX8vpLSTpGYE="
         }
       ]
     },

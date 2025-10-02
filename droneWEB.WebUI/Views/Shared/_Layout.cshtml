@@ -1,72 +1,137 @@
-﻿<!-- File: Views/Shared/_Layout.cshtml -->
-@*
-  Bootstrap Cover layout entegre edilmiş mevcut layout üzerine.
-*@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - droneWEB.WebUI</title>
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/droneWEB.WebUI.styles.css" asp-append-version="true" />
 
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
     <style>
-        /* Cover style */
         html, body {
             height: 100%;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            padding-top: 40px;
-            padding-bottom: 40px;
+            margin: 0;
+            overflow: hidden;
             background-color: #0b1220;
             color: #fff;
+            font-family: 'Russo One', sans-serif;
         }
 
         .cover-container {
-            max-width: 42em;
+            max-width: 100%;
+            position: relative;
+            z-index: 1;
+            padding: 0;
+            background: none;
+            box-shadow: none;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
-        .bg-cover {
-            background-image: url('/images/cover-bg.jpg'); /* değiştir */
-            background-size: cover;
-            background-position: center;
-            border-radius: .5rem;
-            padding: 3rem;
+        /* Fade-in ve yukarıdan aşağıya kayma animasyonu */
+        @@keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .nav-masthead .nav-link {
-            color: rgba(255,255,255,0.9);
+        .neon-title {
+            font-family: 'Russo One', 'Arial Black', sans-serif;
+            font-size: clamp(60px, 10vw, 80px);
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-align: center;
+            text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px rgba(0, 212, 255, 0.4), 0 0 80px rgba(0, 212, 255, 0.2);
+            margin: 10px 0;
+            opacity: 0; /* başta görünmez */
+            animation: fadeInDown 1.5s ease 0.5s forwards; /* 0.5s gecikmeli başlar */
         }
+
+        .neon-logo {
+            width: 350px; /* eski: 150px */
+            filter: drop-shadow(0 0 5px #00d4ff) drop-shadow(0 0 10px #00d4ff) drop-shadow(0 0 20px #00d4ff) drop-shadow(0 0 40px rgba(0, 212, 255, 0.4));
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+            opacity: 0; /* başta görünmez */
+            animation: fadeInDown 1.5s ease forwards;
+        }
+
+            .neon-logo:hover {
+                transform: scale(1.05);
+            }
 
         .site-footer {
             color: rgba(255,255,255,0.6);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin-top: 20px;
         }
+
+        .top-right-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 2;
+        }
+
+            .top-right-buttons a {
+                font-family: 'Russo One', sans-serif;
+                font-size: 16px;
+                color: #ffffff;
+                text-decoration: none;
+                margin-left: 10px;
+                padding: 8px 16px;
+                border: 2px solid #00d4ff;
+                border-radius: 6px;
+                background: rgba(0, 0, 0, 0.2);
+                transition: all 0.3s ease-in-out;
+            }
+
+                .top-right-buttons a:hover {
+                    background: rgba(0, 212, 255, 0.2);
+                    box-shadow: 0 0 10px #00d4ff, 0 0 20px #0077ff;
+                    color: #fff;
+                }
     </style>
+
 
     @RenderSection("Styles", required: false)
 </head>
 <body>
-    <header>
-       
-    </header>
 
-    <div class="container">
-        <main role="main" class="pb-3">
-            <div class="cover-container mx-auto bg-cover shadow-lg">
-                @RenderBody()
-            </div>
-        </main>
+    <div class="top-right-buttons">
+        <a href="/Kullanici/Kayit">Kayıt Ol</a>
+        <a href="/Kullanici/Giris">Giriş Yap</a>
     </div>
 
-    <footer class="mt-4 site-footer text-center">
-       
+    <div class="cover-container">
+        <!-- Logo -->
+        <img src="~/img/Adsız tasarım.png" alt="DroneVision Logo" class="neon-logo" />
+
+
+        <!-- Başlık -->
+        <h1 class="neon-title">GÖKBÖRÜ</h1>
+
+        @RenderBody()
+    </div>
+
+    <footer class="site-footer">
+        &copy; @DateTime.Now.Year DroneVision
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -75,5 +140,3 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
-
