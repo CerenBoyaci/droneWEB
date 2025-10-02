@@ -4,39 +4,50 @@
     Layout = "~/Views/Shared/_DashboardLayout.cshtml";
 }
 
-<div class="container py-5">
-    <div class="text-center mb-4">
-        <h2>Kullanıcıya Yetki Ata</h2>
-        <p class="text-muted">Aşağıdaki formu doldurarak kullanıcıya roller atayabilirsiniz.</p>
-    </div>
-
-    <form asp-action="YetkiAta" method="post" class="needs-validation" novalidate>
-        <div class="row g-3">
-
-            <div class="col-md-6">
-                <label for="kullanici" class="form-label">Kullanıcı Seç</label>
-                <select asp-for="KullaniciId" asp-items="Model.KullaniciSecenekleri" class="form-select" required>
-                    <option value="">Seçiniz</option>
-                </select>
-                <div class="invalid-feedback">
-                    Lütfen bir kullanıcı seçin.
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <label for="roller" class="form-label">Rol Seç (Ctrl ile çoklu seçilebilir)</label>
-                <select asp-for="RolIdListesi" asp-items="Model.RolSecenekleri" class="form-select" multiple required>
-                </select>
-                <div class="invalid-feedback">
-                    Lütfen en az bir rol seçin.
-                </div>
-            </div>
-
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card card-custom p-4 w-100" style="max-width: 700px;">
+        <div class="text-center mb-4">
+            <h2 class="display-5 fw-bold text-primary">Kullanıcıya Yetki Ata</h2>
+            <p class="text-muted">Aşağıdaki formu doldurarak kullanıcıya roller atayabilirsiniz.</p>
         </div>
 
-        <hr class="my-4">
-        <button class="w-100 btn btn-primary btn-lg" type="submit">Yetki Ata</button>
-    </form>
+        <div class="card-body">
+            <form asp-action="YetkiAta" method="post" class="needs-validation" novalidate>
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <label for="kullanici" class="form-label fw-semibold">Kullanıcı Seç</label>
+                        <select asp-for="KullaniciId" asp-items="Model.KullaniciSecenekleri" class="form-select form-select-lg border border-primary" required>
+                            <option value="">Seçiniz</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Lütfen bir kullanıcı seçin.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="roller" class="form-label fw-semibold">Rol Seç (Ctrl ile çoklu seçilebilir)</label>
+                        <select asp-for="RolIdListesi" asp-items="Model.RolSecenekleri" class="form-select form-select-lg border border-primary" multiple required>
+                        </select>
+                        <div class="invalid-feedback">
+                            Lütfen en az bir rol seçin.
+                        </div>
+                    </div>
+
+                </div>
+
+                <hr class="my-4">
+
+                <button class="w-100 btn btn-glow btn-lg fw-bold" type="submit">
+                    Yetki Ata
+                </button>
+            </form>
+
+            <div class="alert alert-red mt-4">
+                ⚠️ Önemli: Yetki atama işlemi dikkatle yapılmalıdır!
+            </div>
+        </div>
+    </div>
 </div>
 
 @section Scripts {

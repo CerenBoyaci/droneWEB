@@ -3,7 +3,7 @@
   Bootstrap 5 Dashboard Layout
   - Sol sidebar
   - Üst navbar
-  - Main content alanı
+  - Main content alanı (modern + mavi ışıklı butonlar)
 *@
 
 <!doctype html>
@@ -20,8 +20,8 @@
     <style>
         body {
             font-size: .875rem;
-            color: black;
-            
+            color: #212529;
+            background-color: #f4f6f8;
         }
 
         /* Sidebar */
@@ -33,16 +33,34 @@
             z-index: 100;
             padding: 56px 0 0;
             width: 250px;
-            background-color: #343a40;
+            background-color: #25254A;
         }
 
             .sidebar .nav-link {
-                color: rgba(255,255,255,.9);
+                color: #fff;
+                transition: all 0.3s ease;
+                position: relative;
+                padding-left: 1.5rem;
             }
 
+                .sidebar .nav-link:hover,
                 .sidebar .nav-link.active {
                     color: #0d6efd;
+                    text-shadow: 0 0 5px #0d6efd, 0 0 10px #0d6efd, 0 0 15px #0d6efd;
                 }
+
+                    .sidebar .nav-link.active::before,
+                    .sidebar .nav-link:hover::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 5px;
+                        height: 100%;
+                        background-color: #0d6efd;
+                        box-shadow: 0 0 8px #0d6efd, 0 0 12px #0d6efd;
+                        border-radius: 0 3px 3px 0;
+                    }
 
         .sidebar-sticky {
             position: relative;
@@ -61,41 +79,110 @@
         .navbar-dark .navbar-brand {
             color: #fff;
         }
+
+        /* Modern gövde tasarımı */
+        .page-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+            .page-container h1 {
+                color: #25254A;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            .page-container p {
+                color: #495057;
+                line-height: 1.6;
+            }
+
+        /* Kırmızı vurgular */
+        .alert-red {
+            background-color: #ffe5e5;
+            border-left: 5px solid #cc0000;
+            color: #a30000;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .card-custom {
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            border: none;
+        }
+
+            .card-custom .card-header {
+                background-color: #25254A;
+                color: #fff;
+                font-weight: 600;
+            }
+
+            .card-custom .card-body {
+                color: #212529;
+            }
+
+        /* 🔹 Mavi ışıklı butonlar */
+        .btn-glow {
+            background-color: #0d6efd;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 8px #0d6efd, 0 0 16px #0d6efd40;
+            transition: all 0.3s ease;
+        }
+
+            .btn-glow:hover {
+                background-color: #0b5ed7;
+                box-shadow: 0 0 12px #0d6efd, 0 0 20px #0d6efd80;
+                transform: translateY(-2px);
+            }
+
+            .btn-glow:focus {
+                outline: none;
+                box-shadow: 0 0 12px #0d6efd, 0 0 20px #0d6efd80;
+            }
+
     </style>
 
     @RenderSection("Styles", required: false)
 </head>
 <body>
-    
-
     <!-- Sidebar -->
     <div class="sidebar">
         <div class="sidebar-sticky">
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link active" href="/Kullanici/Anasayfa">Anasayfa</a>
+                    <a class="nav-link @(ViewData["ActivePage"] as string == "Anasayfa" ? "active" : "")" href="/Kullanici/Anasayfa">Anasayfa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Harita/Harita">Harita</a>
+                    <a class="nav-link @(ViewData["ActivePage"] as string == "Harita" ? "active" : "")" href="/Harita/Harita">Harita</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Harita/RotaHesaplama">Rota Hesaplama</a>
+                    <a class="nav-link @(ViewData["ActivePage"] as string == "RotaHesaplama" ? "active" : "")" href="/Harita/RotaHesaplama">Rota Hesaplama</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/Kullanici/YetkiAta">Yetki Ata</a>
+                    <a class="nav-link @(ViewData["ActivePage"] as string == "YetkiAta" ? "active" : "")" href="/Kullanici/YetkiAta">Yetki Ata</a>
                 </li>
-                
             </ul>
         </div>
     </div>
 
     <!-- Main Content -->
     <main role="main" class="pt-3">
-        @RenderBody()
+        <div class="container-fluid">
+            <div class="page-container">
+                @RenderBody()
+            </div>
+        </div>
     </main>
 
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-

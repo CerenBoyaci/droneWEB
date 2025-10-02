@@ -6,135 +6,167 @@
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
-<h2>Harita</h2>
+<div class="container py-4">
 
-<div id="map" style="width:100%; height:500px;"></div>
+    <h2 class="text-center text-primary mb-4">Harita Yönetimi</h2>
 
-<div style="margin-top:20px;">
-    <input type="text" id="ulke" placeholder="Ülke" />
-    <input type="text" id="sehir" placeholder="Şehir" />
-    <input type="text" id="mahalle" placeholder="Mahalle" />
-    <input type="text" id="sokak" placeholder="Sokak" />
-    <input type="text" id="no" placeholder="No" />
-    <input type="text" id="baslik" placeholder="Başlık" />
-    <input type="number" id="enlem" placeholder="Enlem" step="0.000001" />
-    <input type="number" id="boylam" placeholder="Boylam" step="0.000001" />
-    <button onclick="adresAra()">Adres ile Göster</button>
-    <button onclick="koordinataGit()">Koordinat ile Göster</button>
-    <button onclick="ekleMarker()">Marker Kaydet</button>
+    <div class="row justify-content-center">
+
+        <!-- Harita Kartı -->
+        <div class="col-12 mb-4">
+            <div class="card shadow-sm border-0" style="border-radius:12px; overflow:hidden;">
+                <div id="map" style="width:100%; height:500px;"></div>
+            </div>
+        </div>
+
+        <!-- Form Kartı -->
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="card p-4 shadow-lg" style="border-radius:12px; background-color:#0d1b3d; color:#fff;">
+                <div class="card-body">
+                    <h4 class="text-center text-info mb-3">Marker Ekle / Adres Bul</h4>
+                    <div class="row g-3">
+
+                        <div class="col-md-6">
+                            <input type="text" id="ulke" class="form-control form-control-lg border border-info text-dark" placeholder="Ülke" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="sehir" class="form-control form-control-lg border border-info text-dark" placeholder="Şehir" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="mahalle" class="form-control form-control-lg border border-info text-dark" placeholder="Mahalle" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="sokak" class="form-control form-control-lg border border-info text-dark" placeholder="Sokak" />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" id="no" class="form-control form-control-lg border border-info text-dark" placeholder="No" />
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" id="baslik" class="form-control form-control-lg border border-info text-dark" placeholder="Başlık" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="number" id="enlem" class="form-control form-control-lg border border-info text-dark" placeholder="Enlem" step="0.000001" />
+                        </div>
+                        <div class="col-md-2">
+                            <input type="number" id="boylam" class="form-control form-control-lg border border-info text-dark" placeholder="Boylam" step="0.000001" />
+                        </div>
+
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="btn btn-info btn-glow me-2" onclick="adresAra()">Adres ile Göster</button>
+                        <button class="btn btn-info btn-glow me-2" onclick="koordinataGit()">Koordinat ile Göster</button>
+                        <button class="btn btn-success btn-glow" onclick="ekleMarker()">Marker Kaydet</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 </div>
 
-<script>
-    var map = L.map('map').setView([39.9208, 32.8541], 13);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
+@section Scripts {
+    <script>
+        // Harita
+        var map = L.map('map').setView([39.9208, 32.8541], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
 
-    var markersLayer = L.layerGroup().addTo(map);
-    var secilenMarker = null;
+        var markersLayer = L.layerGroup().addTo(map);
+        var secilenMarker = null;
 
-    // -------------------------------
-    // Adres ile geocoding
-    // -------------------------------
-    async function adresAra() {
-        const ulke = document.getElementById('ulke').value;
-        const sehir = document.getElementById('sehir').value;
-        const mahalle = document.getElementById('mahalle').value;
-        const sokak = document.getElementById('sokak').value;
-        const no = document.getElementById('no').value;
+        async function adresAra() {
+            const ulke = document.getElementById('ulke').value;
+            const sehir = document.getElementById('sehir').value;
+            const mahalle = document.getElementById('mahalle').value;
+            const sokak = document.getElementById('sokak').value;
+            const no = document.getElementById('no').value;
+            const query = [no, sokak, mahalle, sehir, ulke].filter(Boolean).join(', ');
+            if (!query) { alert("En az bir adres bilgisi girin!"); return; }
 
-        const query = [no, sokak, mahalle, sehir, ulke].filter(Boolean).join(', ');
+            const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`;
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                if (data.length === 0) { alert("Adres bulunamadı!"); return; }
 
-        if (!query) { alert("En az bir adres bilgisi girin!"); return; }
+                const lat = parseFloat(data[0].lat);
+                const lon = parseFloat(data[0].lon);
 
-        const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}`;
+                document.getElementById('enlem').value = lat.toFixed(6);
+                document.getElementById('boylam').value = lon.toFixed(6);
 
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            if (data.length === 0) { alert("Adres bulunamadı!"); return; }
+                if (secilenMarker) markersLayer.removeLayer(secilenMarker);
+                secilenMarker = L.marker([lat, lon]).addTo(markersLayer)
+                    .bindPopup(document.getElementById('baslik').value || "Seçilen Yer")
+                    .openPopup();
 
-            const lat = parseFloat(data[0].lat);
-            const lon = parseFloat(data[0].lon);
+                map.setView([lat, lon], 16);
+            } catch (error) { console.error(error); }
+        }
 
-            document.getElementById('enlem').value = lat.toFixed(6);
-            document.getElementById('boylam').value = lon.toFixed(6);
+        async function koordinataGit() {
+            const enlem = parseFloat(document.getElementById('enlem').value);
+            const boylam = parseFloat(document.getElementById('boylam').value);
+            if (isNaN(enlem) || isNaN(boylam)) { alert("Geçerli koordinat girin!"); return; }
 
             if (secilenMarker) markersLayer.removeLayer(secilenMarker);
-
-            secilenMarker = L.marker([lat, lon]).addTo(markersLayer)
+            secilenMarker = L.marker([enlem, boylam]).addTo(markersLayer)
                 .bindPopup(document.getElementById('baslik').value || "Seçilen Yer")
                 .openPopup();
 
-            map.setView([lat, lon], 16);
-        } catch (error) { console.error("Adres arama hatası:", error); }
-    }
+            map.setView([enlem, boylam], 16);
 
-    // -------------------------------
-    // Koordinat ile reverse geocoding
-    // -------------------------------
-    async function koordinataGit() {
-        const enlem = parseFloat(document.getElementById('enlem').value);
-        const boylam = parseFloat(document.getElementById('boylam').value);
-
-        if (isNaN(enlem) || isNaN(boylam)) { alert("Geçerli koordinat girin!"); return; }
-
-        if (secilenMarker) markersLayer.removeLayer(secilenMarker);
-
-        secilenMarker = L.marker([enlem, boylam]).addTo(markersLayer)
-            .bindPopup(document.getElementById('baslik').value || "Seçilen Yer")
-            .openPopup();
-
-        map.setView([enlem, boylam], 16);
-
-        // Reverse Geocoding ile adres doldur
-        const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${enlem}&lon=${boylam}&addressdetails=1`;
-        try {
-            const response = await fetch(url);
-            const data = await response.json();
-            const address = data.address || {};
-
-            document.getElementById('ulke').value = address.country || '';
-            document.getElementById('sehir').value = address.city || address.town || address.village || '';
-            document.getElementById('mahalle').value = address.suburb || address.neighbourhood || '';
-            document.getElementById('sokak').value = address.road || '';
-            document.getElementById('no').value = address.house_number || '';
-        } catch (error) { console.error("Adres alınamadı:", error); }
-    }
-
-    // -------------------------------
-    // Marker kaydet
-    // -------------------------------
-    async function ekleMarker() {
-        const baslik = document.getElementById('baslik').value;
-        const enlem = parseFloat(document.getElementById('enlem').value);
-        const boylam = parseFloat(document.getElementById('boylam').value);
-
-        if (!baslik || isNaN(enlem) || isNaN(boylam)) {
-            alert("Lütfen başlık girin ve adresi/koordinatı gösterin!");
-            return;
+            const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${enlem}&lon=${boylam}&addressdetails=1`;
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                const address = data.address || {};
+                document.getElementById('ulke').value = address.country || '';
+                document.getElementById('sehir').value = address.city || address.town || address.village || '';
+                document.getElementById('mahalle').value = address.suburb || address.neighbourhood || '';
+                document.getElementById('sokak').value = address.road || '';
+                document.getElementById('no').value = address.house_number || '';
+            } catch (error) { console.error(error); }
         }
 
-        try {
-            const response = await fetch('https://localhost:7130/api/Haritalama/olustur', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ baslik, enlem, boylam })
-            });
+        async function ekleMarker() {
+            const baslik = document.getElementById('baslik').value;
+            const enlem = parseFloat(document.getElementById('enlem').value);
+            const boylam = parseFloat(document.getElementById('boylam').value);
 
-            if (response.ok) {
-                alert("Marker kaydedildi!");
-                document.getElementById('baslik').value = '';
-                document.getElementById('ulke').value = '';
-                document.getElementById('sehir').value = '';
-                document.getElementById('mahalle').value = '';
-                document.getElementById('sokak').value = '';
-                document.getElementById('no').value = '';
-                document.getElementById('enlem').value = '';
-                document.getElementById('boylam').value = '';
-            } else {
-                alert("Marker kaydedilemedi!");
+            if (!baslik || isNaN(enlem) || isNaN(boylam)) { alert("Başlık ve koordinat girin!"); return; }
+
+            try {
+                const response = await fetch('https://localhost:7130/api/Haritalama/olustur', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ baslik, enlem, boylam })
+                });
+                if (response.ok) {
+                    alert("Marker kaydedildi!");
+                    ['baslik','ulke','sehir','mahalle','sokak','no','enlem','boylam'].forEach(id => document.getElementById(id).value = '');
+                } else { alert("Marker kaydedilemedi!"); }
+            } catch (error) { console.error(error); }
+        }
+    </script>
+
+    <style>
+        .btn-glow {
+            transition: all 0.3s ease;
+        }
+
+            .btn-glow:hover {
+                box-shadow: 0 0 10px #0dcaf0, 0 0 20px #0dcaf0, 0 0 30px #0dcaf0;
+                transform: translateY(-2px);
             }
-        } catch (error) { console.error("Marker kaydetme hatası:", error); }
-    }
-</script>
+
+        .form-control:hover {
+            border-color: #0dcaf0;
+            box-shadow: 0 0 8px rgba(13,202,240,0.5);
+        }
+    </style>
+}
