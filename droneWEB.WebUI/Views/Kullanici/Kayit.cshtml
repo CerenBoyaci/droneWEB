@@ -6,98 +6,71 @@
     ViewData["Title"] = "Kayıt Ol";
 }
 
-<section class="text-center text-white"; min-height: 100vh; padding: 50px 0;">
-    <div class="register-container">
+<section>
+    <div>
 
- 
-        <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+        @if (ViewBag.Mesaj != null)
+        {
+            <div class="alert @(ViewBag.Basarili == true ? "alert-success" : "alert-danger")">
+                @ViewBag.Mesaj
+            </div>
+        }
 
-       
-       
-
-    
-        <div>
-
-            @if (ViewBag.Mesaj != null)
-            {
-                <div class="alert @(ViewBag.Basarili == true ? "alert-success" : "alert-danger")">
-                    @ViewBag.Mesaj
-                </div>
-            }
-
-            <form asp-action="Kayit" method="post" style="background-color:#25254A; padding:30px; border-radius:15px; box-shadow:0 0 20px rgba(0,212,255,0.6); border:2px solid #00d4ff; backdrop-filter: blur(8px);">
-                <div class="row mb-3 align-items-center">
-                    <label for="Ad" class="col-sm-3 col-form-label text-white">Ad</label>
-                    <div class="col-sm-9">
-                        <input asp-for="Ad" class="form-control" id="Ad"  />
-                        <span asp-validation-for="Ad" class="text-danger"></span>
-                    </div>
+        <form asp-action="Kayit" method="post" class="transparent-form">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="Ad" class="form-label">Ad</label>
+                    <input asp-for="Ad" class="form-control" id="Ad" />
+                    <span asp-validation-for="Ad" class="text-danger"></span>
                 </div>
 
-                <div class="row mb-3 align-items-center">
-                    <label for="Soyad" class="col-sm-3 col-form-label text-white">Soyad</label>
-                    <div class="col-sm-9">
-                        <input asp-for="Soyad" class="form-control" id="Soyad"  />
-                        <span asp-validation-for="Soyad" class="text-danger"></span>
-                    </div>
+                <div class="col-md-6 mb-3">
+                    <label for="Soyad" class="form-label">Soyad</label>
+                    <input asp-for="Soyad" class="form-control" id="Soyad" />
+                    <span asp-validation-for="Soyad" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="Eposta" class="form-label">Eposta</label>
+                    <input asp-for="Eposta" type="email" class="form-control" id="Eposta" />
+                    <span asp-validation-for="Eposta" class="text-danger"></span>
                 </div>
 
-                <div class="row mb-3 align-items-center">
-                    <label for="Eposta" class="col-sm-3 col-form-label text-white">Eposta</label>
-                    <div class="col-sm-9">
-                        <input asp-for="Eposta" type="email" class="form-control" id="Eposta"  />
-                        <span asp-validation-for="Eposta" class="text-danger"></span>
-                    </div>
+                <div class="col-md-6 mb-3">
+                    <label for="TcKimlikNo" class="form-label">TC Kimlik No</label>
+                    <input asp-for="TcKimlikNo" id="TcKimlikNo" class="form-control" maxlength="11" />
+                    <span asp-validation-for="TcKimlikNo" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="Telefon" class="form-label">Telefon</label>
+                    <input asp-for="Telefon" id="Telefon" class="form-control" maxlength="10" />
+                    <span asp-validation-for="Telefon" class="text-danger"></span>
                 </div>
 
-                <div class="row mb-3 align-items-center">
-                    <label for="TcKimlikNo" class="col-sm-3 col-form-label text-white">TC Kimlik No</label>
-                    <div class="col-sm-9">
-                        <input asp-for="TcKimlikNo" id="TcKimlikNo" class="form-control"  maxlength="11" />
-                        <span asp-validation-for="TcKimlikNo" class="text-danger"></span>
-                    </div>
+                <div class="col-md-6 mb-3">
+                    <label for="Sifre" class="form-label">Şifre</label>
+                    <input asp-for="Sifre" type="password" class="form-control" id="Sifre" />
+                    <span asp-validation-for="Sifre" class="text-danger"></span>
                 </div>
+            </div>
 
-                <div class="row mb-3 align-items-center">
-                    <label for="Telefon" class="col-sm-3 col-form-label text-white">Telefon</label>
-                    <div class="col-sm-9 position-relative">
-                        <span class="position-absolute" style="left:12px; top:50%; transform:translateY(-50%); font-weight:bold; color:#6c757d;">+90</span>
-                        <input asp-for="Telefon" id="Telefon" class="form-control ps-5" maxlength="10" placeholder="___ ___ __ __" />
-                        <span asp-validation-for="Telefon" class="text-danger"></span>
-                    </div>
-                </div>
+            <div class="mb-3">
+                @Html.RenderCaptcha("CaptchaInput")
+            </div>
 
-                <div class="row mb-4 align-items-center">
-                    <label for="Sifre" class="col-sm-3 col-form-label text-white">Şifre</label>
-                    <div class="col-sm-9">
-                        <input asp-for="Sifre" type="password" class="form-control" id="Sifre"  />
-                        <span asp-validation-for="Sifre" class="text-danger"></span>
-                    </div>
-                </div>
-                <div>@Html.RenderCaptcha("CaptchaInput")</div>
-                <div class="text-center">
-                    <button type="submit" class="btn neon-btn w-50" style="padding:8px 24px; font-size:18px;">Kayıt Ol</button>
+            <div class="text-center mt-3">
+                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+            </div>
 
-                </div>
+            
+        </form>
 
-                <div class="text-center mt-3">
-                    <div class="text-center mt-3">
-                        <a href="@Url.Action("Giris", "Kullanici")"
-                           style="color:#ffffff;
-              text-decoration:none;
-              font-weight:bold;
-              text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff;">
-                            Giriş Yap
-                        </a>
-                    </div>
-
-                 
-                </div>
-            </form>
-        </div>
     </div>
-
-    
 </section>
 
 @section Scripts {
