@@ -21,13 +21,20 @@
             font-family: 'Russo One', sans-serif;
         }
 
+        /* Arkadaki yıldızlar için canvas */
+        #starfield {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* en arkada kalacak */
+        }
+
         .cover-container {
             max-width: 100%;
             position: relative;
             z-index: 1;
-            padding: 0;
-            background: none;
-            box-shadow: none;
             height: 100vh;
             display: flex;
             justify-content: center;
@@ -35,7 +42,6 @@
             flex-direction: column;
         }
 
-        /* Fade-in ve yukarıdan aşağıya kayma animasyonu */
         @@keyframes fadeInDown {
             0% {
                 opacity: 0;
@@ -49,7 +55,6 @@
         }
 
         .neon-title {
-            font-family: 'Russo One', 'Arial Black', sans-serif;
             font-size: clamp(60px, 10vw, 80px);
             color: #ffffff;
             text-transform: uppercase;
@@ -57,16 +62,16 @@
             text-align: center;
             text-shadow: 0 0 5px #00d4ff, 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px rgba(0, 212, 255, 0.4), 0 0 80px rgba(0, 212, 255, 0.2);
             margin: 10px 0;
-            opacity: 0; /* başta görünmez */
-            animation: fadeInDown 1.5s ease 0.5s forwards; /* 0.5s gecikmeli başlar */
+            opacity: 0;
+            animation: fadeInDown 1.5s ease 0.5s forwards;
         }
 
         .neon-logo {
-            width: 350px; /* eski: 150px */
-            filter: drop-shadow(0 0 5px #00d4ff) drop-shadow(0 0 10px #00d4ff) drop-shadow(0 0 20px #00d4ff) drop-shadow(0 0 40px rgba(0, 212, 255, 0.4));
+            width: 350px;
+            filter: drop-shadow(0 0 5px #00d4ff) drop-shadow(0 0 10px #00d4ff) drop-shadow(0 0 20px #00d4ff);
             margin-bottom: 20px;
             transition: transform 0.3s;
-            opacity: 0; /* başta görünmez */
+            opacity: 0;
             animation: fadeInDown 1.5s ease forwards;
         }
 
@@ -90,7 +95,6 @@
         }
 
             .top-right-buttons a {
-                font-family: 'Russo One', sans-serif;
                 font-size: 16px;
                 color: #ffffff;
                 text-decoration: none;
@@ -109,10 +113,12 @@
                 }
     </style>
 
-
     @RenderSection("Styles", required: false)
 </head>
 <body>
+
+    <!-- Yıldızlı arka plan -->
+    <canvas id="starfield"></canvas>
 
     <div class="top-right-buttons">
         <a href="/Kullanici/Kayit">Kayıt Ol</a>
@@ -120,13 +126,8 @@
     </div>
 
     <div class="cover-container">
-        <!-- Logo -->
         <img src="~/img/Adsız tasarım.png" alt="DroneVision Logo" class="neon-logo" />
-
-
-        <!-- Başlık -->
         <h1 class="neon-title">GÖKBÖRÜ</h1>
-
         @RenderBody()
     </div>
 
@@ -137,6 +138,55 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script>
+        const canvas = document.getElementById("starfield");
+        const ctx = canvas.getContext("2d");
+        let stars = [];
+        let numStars = 150;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener("resize", resizeCanvas);
+        resizeCanvas();
+
+        function initStars() {
+            stars = [];
+            for (let i = 0; i < numStars; i++) {
+                stars.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    size: Math.random() * 2,
+                    speed: 0.2 + Math.random() * 0.5
+                });
+            }
+        }
+
+        function animateStars() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = "#fff";
+
+            for (let star of stars) {
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.size, 0, 2 * Math.PI);
+                ctx.fill();
+
+                star.y += star.speed;
+                if (star.y > canvas.height) {
+                    star.y = 0;
+                    star.x = Math.random() * canvas.width;
+                }
+            }
+            requestAnimationFrame(animateStars);
+        }
+
+        initStars();
+        animateStars();
+    </script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

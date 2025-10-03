@@ -106,8 +106,7 @@
               "RelativeToolTip": "droneWEB.WebUI\\Helpers\\CaptchaHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-02T12:08:31.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T12:08:31.559Z"
             },
             {
               "$type": "Document",
@@ -119,8 +118,7 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Kullanici\\Kayit.cshtml",
               "ViewState": "AgIAAFQAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T07:41:39.629Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T07:41:39.629Z"
             },
             {
               "$type": "Document",
@@ -132,8 +130,7 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Kullanici\\Giris.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T07:25:39.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T07:25:39.597Z"
             },
             {
               "$type": "Document",
@@ -145,8 +142,7 @@
               "RelativeToolTip": "droneWEB.WebUI\\wwwroot\\css\\site.css",
               "ViewState": "AgIAAGoAAAAAAAAAAAAUwH4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-02T10:55:47.944Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-02T10:55:47.944Z"
             },
             {
               "$type": "Document",
@@ -158,8 +154,7 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Kullanici\\YetkiAta.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T09:05:28.045Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T09:05:28.045Z"
             },
             {
               "$type": "Document",
@@ -171,8 +166,7 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Harita\\Harita.cshtml",
               "ViewState": "AgIAAI4AAAAAAAAAAAAkwKwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-28T14:51:45.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-28T14:51:45.139Z"
             },
             {
               "$type": "Document",
@@ -184,8 +178,7 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Harita\\RotaHesaplama.cshtml",
               "ViewState": "AgIAAK0AAAAAAAAAAAAkwMcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T10:33:10.513Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T10:33:10.513Z"
             },
             {
               "$type": "Document",
@@ -197,8 +190,7 @@
               "RelativeToolTip": "droneWEB.WebUI\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-09-29T08:12:53.578Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T08:12:53.578Z"
             },
             {
               "$type": "Document",
@@ -206,9 +198,9 @@
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "droneWEB.WebUI\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "droneWEB.WebUI\\Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAwwIYAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\ASUS\\Documents\\tez webb\\droneWEB\\droneWEB.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "droneWEB.WebUI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAwwIgAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-09-29T07:18:53.17Z",
               "EditorCaption": ""
